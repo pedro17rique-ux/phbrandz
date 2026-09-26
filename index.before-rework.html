@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PH BRANDZ — Estratégia de Marca, Naming & Identidade Visual</title>
+  <meta name="description" content="Estratégia de marca, naming e identidade visual para empresas que chegaram a um novo momento. Por Paulo Henrique, Goiânia - Brasil.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/ph-avatar.png">
+
+  <!-- Google Fonts: Inter + Syne + Newsreader -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+  <!-- Textura Cinemática de Grain -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Ambient Light Glow Suave (Oura Ring inspired) -->
+  <div class="ambient-glow" id="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Barra de Progresso Superior -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Custom Cursor Dinâmico -->
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <span class="cursor-badge" id="cursor-badge"></span>
+  </div>
+
+  <!-- 00. PRELOADER EDITORIAL -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-top">
+        <span class="brand-sub">PH BRANDZ / ESTÚDIO</span>
+        <span class="location-sub">GOIÂNIA, BR</span>
+      </div>
+      <div class="preloader-counter" id="preloader-counter">000</div>
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar" id="preloader-bar"></div>
+      </div>
+      <div class="preloader-statement">
+        <span>ESTRATÉGIA</span>
+        <span class="sep">•</span>
+        <span>DIREÇÃO</span>
+        <span class="sep">•</span>
+        <span>IDENTIDADE</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER NAVEGAÇÃO SUPERIOR -->
+  <header class="top-nav" id="top-nav">
+    <div class="nav-left">
+      <a href="#hero" class="nav-brand magnetic" data-strength="15">
+        <span class="brand-monogram">PH</span>
+        <span class="brand-full">Brandz.</span>
+        <img src="assets/phbz-tag.png" alt="PHBZ signature" class="nav-signature-tag">
+      </a>
+      <div class="live-pill">
+        <span class="live-dot pulse"></span>
+        <span class="live-text" id="live-status">Goiânia <span id="live-clock">--:--</span> • Disponível para novos projetos</span>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <a href="https://www.behance.net/phbrandz" target="_blank" rel="noopener" class="nav-ext-link magnetic" data-strength="10">
+        <span>Behance</span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      </a>
+      <a href="#contato" class="btn-talk magnetic" data-strength="15">
+        <span>Iniciar Projeto</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- MENU FLUTUANTE DOCK NA BASE (Estilo Blnks.co) -->
+  <nav class="floating-dock" id="floating-dock">
+    <div class="dock-inner">
+      <a href="#projetos" class="dock-link" data-cursor="( Projetos )">
+        <span class="dock-bracket">(</span><span class="dock-title">Projetos</span><span class="dock-bracket">)</span>
+      </a>
+      <a href="#servicos" class="dock-link" data-cursor="( Serviços )">
+        <span class="dock-bracket">(</span><span class="dock-title">Serviços</span><span class="dock-bracket">)</span>
+      </a>
+      <a href="#metodo" class="dock-link" data-cursor="( Método )">
+        <span class="dock-bracket">(</span><span class="dock-title">Método</span><span class="dock-bracket">)</span>
+      </a>
+      <a href="#estudio" class="dock-link" data-cursor="( Estúdio )">
+        <span class="dock-bracket">(</span><span class="dock-title">Estúdio</span><span class="dock-bracket">)</span>
+      </a>
+      <a href="#insights" class="dock-link" data-cursor="( Insights )">
+        <span class="dock-bracket">(</span><span class="dock-title">Insights</span><span class="dock-bracket">)</span>
+      </a>
+      <a href="#contato" class="dock-link" data-cursor="( Contato )">
+        <span class="dock-bracket">(</span><span class="dock-title">Contato</span><span class="dock-bracket">)</span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- 01. HERO -->
+    <section class="hero-section" id="hero">
+      <div class="hero-watermark" data-speed="0.2">BRANDZ</div>
+      
+      <div class="hero-container">
+        <div class="hero-meta-row">
+          <div class="tag-label">
+            <span class="tag-bracket">[</span>
+            <span class="tag-text">ESTRATÉGIA DE MARCA • NAMING • IDENTIDADE VISUAL</span>
+            <span class="tag-bracket">]</span>
+          </div>
+          <div class="hero-stats-badge">
+            <span class="badge-num">+21,9K</span>
+            <span class="badge-txt">visualizações de projetos no Behance</span>
+          </div>
+        </div>
+
+        <div class="hero-headline-wrap">
+          <h1 class="hero-h1">
+            <span class="h1-line"><span class="h1-char-inner">SEU NEGÓCIO CRESCEU.</span></span>
+            <span class="h1-line serif-accent"><span class="h1-char-inner">SUA MARCA TAMBÉM?</span></span>
+          </h1>
+        </div>
+
+        <!-- Showcase Hero: Showreel e Grid de Cases com Tilt 3D -->
+        <div class="hero-showcase-wrapper" data-cursor="( Explorar )">
+          <div class="hero-tilt-card" id="hero-tilt-card">
+            <div class="card-reflection"></div>
+            <div class="card-media-box">
+              <img src="assets/logofolio-hero.gif" alt="PH BRANDZ — Estratégia de Marca & Identidade Visual" class="hero-media-img" loading="eager">
+              <div class="card-floating-badge">
+                <span class="badge-pulse"></span>
+                <span>SHOWCASE • BRAND SYSTEMS 2025</span>
+              </div>
+            </div>
+            <div class="card-bottom-info">
+              <div>
+                <span class="card-cat">Estratégia de Marca • Sistemas & Direção Criativa</span>
+                <h3 class="card-name">Design & Strategy by Brandz.</h3>
+              </div>
+              <a href="#projetos" class="card-arrow-btn magnetic" data-strength="15">
+                <span>Conhecer projetos</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Texto Hero & CTAs Oficiais -->
+        <div class="hero-footer-row">
+          <div class="hero-text-block">
+            <p class="hero-manifesto">
+              Estratégia de marca, naming e identidade visual para empresas que chegaram a um novo momento — mas cuja marca ainda não mostra isso.
+            </p>
+            <p class="hero-subtext">
+              Construímos marcas mais claras, próprias e reconhecíveis, capazes de traduzir o valor do negócio antes mesmo da primeira conversa.
+            </p>
+            <div class="hero-signature-tagline">
+              <span class="sig-bullet">✦</span>
+              <strong>Estratégia primeiro. Design depois.</strong>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <div class="hero-action-buttons">
+              <a href="#projetos" class="btn-primary magnetic" data-strength="15">
+                <span>Conhecer projetos →</span>
+              </a>
+              <a href="#contato" class="btn-secondary magnetic" data-strength="15">
+                <span>Iniciar um projeto →</span>
+              </a>
+            </div>
+            <div class="hero-microcopy">
+              <span>Design & Strategy by Brandz.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marquee Infinito -->
+      <div class="brand-ticker">
+        <div class="ticker-track">
+          <span>BRAND STRATEGY</span> <span class="t-sep">✦</span>
+          <span>NAMING</span> <span class="t-sep">✦</span>
+          <span>VISUAL IDENTITY</span> <span class="t-sep">✦</span>
+          <span>REBRANDING</span> <span class="t-sep">✦</span>
+          <span>VERBAL IDENTITY</span> <span class="t-sep">✦</span>
+          <span>CREATIVE DIRECTION</span> <span class="t-sep">✦</span>
+          <span>BRAND STRATEGY</span> <span class="t-sep">✦</span>
+          <span>NAMING</span> <span class="t-sep">✦</span>
+          <span>VISUAL IDENTITY</span> <span class="t-sep">✦</span>
+          <span>REBRANDING</span> <span class="t-sep">✦</span>
+          <span>VERBAL IDENTITY</span> <span class="t-sep">✦</span>
+          <span>CREATIVE DIRECTION</span> <span class="t-sep">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. PROBLEMA -->
+    <section class="problem-section" id="problema">
+      <div class="section-container">
+        <div class="section-header-block">
+          <div class="section-tag">
+            <span class="tag-num">02</span>
+            <span class="tag-title">Diagnóstico de Momento</span>
+          </div>
+          <h2 class="section-main-heading">
+            O NEGÓCIO CRESCEU MAIS RÁPIDO QUE A MARCA.
+          </h2>
+          <div class="problem-intro-paragraphs">
+            <p class="lead-p">Isso acontece com mais empresas do que parece.</p>
+            <p>O negócio amadurece. A equipe cresce. O serviço melhora. O público muda. O ticket aumenta.</p>
+            <p class="contrast-p">Mas a marca continua comunicando a empresa que existia anos atrás.</p>
+            <p>E quando a percepção não acompanha a realidade, um bom negócio pode parecer menor, mais comum ou menos preparado do que realmente é.</p>
+          </div>
+        </div>
+
+        <!-- 4 Diagnósticos Visuais em Grid -->
+        <div class="diagnosis-grid">
+          <div class="diagnosis-card">
+            <div class="diag-header">
+              <span class="diag-code">01</span>
+              <h3 class="diag-title">CRESCIMENTO</h3>
+            </div>
+            <p class="diag-desc">O negócio mudou, mas a marca não acompanhou.</p>
+            <div class="diag-accent-line"></div>
+          </div>
+
+          <div class="diagnosis-card">
+            <div class="diag-header">
+              <span class="diag-code">02</span>
+              <h3 class="diag-title">DIFERENCIAÇÃO</h3>
+            </div>
+            <p class="diag-desc">Sua empresa começa a parecer igual a todas as outras.</p>
+            <div class="diag-accent-line"></div>
+          </div>
+
+          <div class="diagnosis-card">
+            <div class="diag-header">
+              <span class="diag-code">03</span>
+              <h3 class="diag-title">CONSISTÊNCIA</h3>
+            </div>
+            <p class="diag-desc">Cada material parece ter sido criado por uma empresa diferente.</p>
+            <div class="diag-accent-line"></div>
+          </div>
+
+          <div class="diagnosis-card">
+            <div class="diag-header">
+              <span class="diag-code">04</span>
+              <h3 class="diag-title">PERCEPÇÃO</h3>
+            </div>
+            <p class="diag-desc">Você entrega mais, mas o mercado nem sempre percebe por quê.</p>
+            <div class="diag-accent-line"></div>
+          </div>
+        </div>
+
+        <div class="problem-footer-badge">
+          <span class="badge-icon">✦</span>
+          <span class="badge-text">É normalmente nesse momento que a PH entra.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. NOSSA TESE -->
+    <section class="thesis-section" id="tese">
+      <div class="thesis-container">
+        <div class="thesis-visual-col">
+          <div class="thesis-image-frame">
+            <img src="assets/manifesto-portrait.jpg" alt="Paulo Henrique - PH Brandz Tese" class="thesis-img">
+            <div class="thesis-image-badge">
+              <span class="badge-dot"></span>
+              <span>PH BRANDZ • DIREÇÃO & CRITÉRIO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="thesis-text-col">
+          <div class="section-tag">
+            <span class="tag-num">03</span>
+            <span class="tag-title">Nossa Tese</span>
+          </div>
+          <h2 class="thesis-headline">
+            EMPRESAS BOAS NÃO DEVERIAM PARECER <em>COMUNS</em>.
+          </h2>
+          <div class="thesis-body">
+            <p class="thesis-highlight">Não acreditamos em identidade visual como maquiagem.</p>
+            <p>Antes de decidir como uma marca deve parecer, precisamos entender o que ela precisa representar.</p>
+            <div class="thesis-tags-list">
+              <span>Negócio</span> • <span>Mercado</span> • <span>Público</span> • <span>Concorrência</span> • <span>Percepção</span> • <span>Personalidade</span> • <span>Ambição</span>
+            </div>
+            <p class="thesis-lead">Primeiro encontramos direção. Depois damos forma a ela.</p>
+          </div>
+          <div class="thesis-signature">
+            <span class="sig-dash">—</span>
+            <span class="sig-name">Estratégia aplicada ao design.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. PROJETOS (CASES) -->
+    <section class="cases-section" id="projetos">
+      <div class="section-header-block">
+        <div class="section-tag">
+          <span class="tag-num">04</span>
+          <span class="tag-title">Projetos Selecionados</span>
+        </div>
+        <div class="section-head-title-row">
+          <div>
+            <h2 class="section-main-heading">
+              PROBLEMAS DIFERENTES.<br>
+              <em>MARCAS DIFERENTES.</em>
+            </h2>
+            <div class="cases-intro-text">
+              <p>Marcas diferentes não deveriam parecer iguais.</p>
+              <p>Cada projeto começa com um negócio, um contexto e um desafio específico. Por isso, não trabalhamos a partir de uma fórmula estética.</p>
+              <p class="highlight-line">Estratégia define a direção. Design torna essa direção visível.</p>
+            </div>
+          </div>
+          <div class="cases-filter-pill">
+            <button class="filter-btn active" data-filter="all">Todos (08)</button>
+            <button class="filter-btn" data-filter="strategy">Estratégia</button>
+            <button class="filter-btn" data-filter="identity">Identidade</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid 4 Fileiras de 2 (8 Cards Reais no Total) -->
+      <div class="cases-grid">
+
+        <!-- FILEIRA 1 / CARD 1: KOMMANDO -->
+        <article class="case-card" data-category="identity" data-cursor="( Ver Case )">
+          <a href="https://www.behance.net/gallery/210110457/KOMMANDO-Visual-Identity" target="_blank" rel="noopener" class="case-card-inner">
+            <div class="case-media-holder">
+              <img src="assets/case_210110457.jpg" alt="KOMMANDO Visual Identity" class="case-media-img" loading="lazy">
+              <div class="case-media-overlay"></div>
+              <div class="case-chip">TACTICAL / APPAREL</div>
+            </div>
+            <div class="case-content">
+              <div class="case-meta">
+                <span class="case-tag-item">Identidade Visual & Branding</span>
+                <span class="case-year">KOMMANDO</span>
+              </div>
+              <h3 class="case-title">Como transformar precisão e disciplina em linguagem visual?</h3>
+              <p class="case-desc">
+                Uma identidade construída para traduzir autoridade, performance e universo tático sem depender dos códigos óbvios da categoria.
+              </p>
+              <div class="case-footer-action">
+                <span class="action-text">Conhecer o projeto</span>
+                <span class="action-arrow">→</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- FILEIRA 1 / CARD 2: Wolfen Store -->
+        <article class="case-card" data-category="identity" data-cursor="( Ver Case )">
+          <a href="https://www.behance.net/gallery/244590547/Wolfen-Store-Brand-Visual-Identity" target="_blank" rel="noopener" class="case-card-inner">
+            <div class="case-media-holder">
+              <img src="assets/case_244590547.jpg" alt="Wolfen Store Brand Visual Identity" class="case-media-img" loading="lazy">
+              <div class="case-media-overlay"></div>
+              <div class="case-chip">RETAIL / STREETWEAR</div>
+            </div>
+            <div class="case-content">
+              <div class="case-meta">
+                <span class="case-tag-item">Brand & Visual Identity</span>
+                <span class="case-year">Wolfen Store</span>
+              </div>
+              <h3 class="case-title">Como construir presença em um mercado movido por identidade?</h3>
+              <p class="case-desc">
+                Um sistema visual contemporâneo para uma marca de moda que precisava equilibrar personalidade, contraste e capacidade de adaptação.
+              </p>
+              <div class="case-footer-action">
+                <span class="action-text">Conhecer o projeto</span>
+                <span class="action-arrow">→</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- FILEIRA 2 / CARD 3: CONEXA AI -->
+        <article class="case-card" data-category="strategy" data-cursor="( Ver Case )">
+          <a href="https://www.behance.net/gallery/235552681/CONEXAAI-BRANDING-ESTRATEGY" target="_blank" rel="noopener" class="case-card-inner">
+            <div class="case-media-holder">
+              <img src="assets/case_235552681.jpg" alt="CONEXA AI Branding & Strategy" class="case-media-img" loading="lazy">
+              <div class="case-media-overlay"></div>
+              <div class="case-chip">TECH / ENTERPRISE AI</div>
+            </div>
+            <div class="case-content">
+              <div class="case-meta">
+                <span class="case-tag-item">Branding & Estratégia</span>
+                <span class="case-year">CONEXA AI</span>
+              </div>
+              <h3 class="case-title">Como construir personalidade em um mercado onde tudo começa a parecer igual?</h3>
+              <p class="case-desc">
+                Estratégia e identidade para traduzir tecnologia e complexidade em uma marca mais clara, própria e reconhecível.
+              </p>
+              <div class="case-footer-action">
+                <span class="action-text">Conhecer o projeto</span>
+                <span class="action-arrow">→</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- FILEIRA 2 / CARD 4: DANKON -->
+        <article class="case-card" data-category="strategy identity" data-cursor="( Ver Case )">
+          <a href="https://www.behance.net/gallery/241940875/DANKON-Brand-Creation-Visual-Identity" target="_blank" rel="noopener" class="case-card-inner">
+            <div class="case-media-holder">
+              <img src="assets/case_241940875.jpg" alt="DANKON Brand Creation & Visual Identity" class="case-media-img" loading="lazy">
+              <div class="case-media-overlay"></div>
+              <div class="case-chip">CORPORATE / ARCHITECTURE</div>
+            </div>
+            <div class="case-content">
+              <div class="case-meta">
+                <span class="case-tag-item">Criação de Marca & Sistema</span>
+                <span class="case-year">DANKON</span>
+              </div>
+              <h3 class="case-title">Como transformar solidez em uma marca que não pareça genérica?</h3>
+              <p class="case-desc">
+                Uma marca construída do zero para comunicar estrutura, precisão e presença corporativa através de um sistema visual próprio.
+              </p>
+              <div class="case-footer-action">
+                <span class="action-text">Conhecer o projeto</span>
+                <span class="action-arrow">→</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- FILEIRA 3 / CARD 5: AUREUM -->
+        <article class="case-card" data-category="strategy" data-cursor="( Ver Case )">
+          <a href="https://www.behance.net/gallery/227249715/AUREUM-SOLUCOES-BRANDING-ESTRATEGY" target="_blank" rel="noopener" class="case-card-inner">
+            <div class="case-media-holder">
+              <img src="assets/case_227249715.jpg" alt="Aureum Soluções Branding & Strategy" class="case-media-img" loading="lazy">
+              <div class="case-media-overlay"></div>
+              <div class="case-chip">FINANCIAL / CONSULTING</div>
+            </div>
+            <div class="case-content">
+              <div class="case-meta">
+                <span class="case-tag-item">Branding & Estratégia de Marca</span>
+                <span class="case-year">AUREUM</span>
+              </div>
+              <h3 class="case-title">Como comunicar valor sem precisar dizer “somos premium”?</h3>
+              <p class="case-desc">
+                Estratégia e identidade orientadas à construção de percepção, confiança e sofisticação para uma empresa de soluções estratégicas.
+              </p>
+              <div class="case-footer-action">
+                <span class="action-text">Conhecer o projeto</span>
+                <span class="action-arrow">→</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- FILEIRA 3 / CARD 6: HOD SOLUÇÕES -->
+        <article class="case-card" data-category="strategy identity" data-cursor="( Ver Case )">
+          <a href="https://www.behance.net/gallery/225645753/HOD-SOLUCOES-REBRANDING" target="_blank" rel="noopener" class="case-card-inner">
+            <div class="case-media-holder">
+              <img src="assets/case_225645753.jpg" alt="HOD Soluções Rebranding" class="case-media-img" loading="lazy">
+              <div class="case-media-overlay"></div>
+              <div class="case-chip">REBRANDING / B2B</div>
+            </div>
+            <div class="case-content">
+              <div class="case-meta">
+                <span class="case-tag-item">Rebranding & Sistema Visual</span>
+                <span class="case-year">HOD SOLUÇÕES</span>
+              </div>
+              <h3 class="case-title">O negócio mudou. A marca precisava acompanhar.</h3>
+              <p class="case-desc">
+                Um processo de rebranding criado para aproximar a percepção da marca do nível de maturidade, autoridade e escala alcançado pelo negócio.
+              </p>
+              <div class="case-footer-action">
+                <span class="action-text">Conhecer o projeto</span>
+                <span class="action-arrow">→</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- FILEIRA 4 / CARD 7: ROCKET BUSINESS -->
+        <article class="case-card" data-category="strategy" data-cursor="( Ver Case )">
+          <a href="https://www.behance.net/gallery/225127697/Rocket-Business-Brand-e-Visual-identity" target="_blank" rel="noopener" class="case-card-inner">
+            <div class="case-media-holder">
+              <img src="assets/case_225127697.jpg" alt="Rocket Business Brand & Visual Identity" class="case-media-img" loading="lazy">
+              <div class="case-media-overlay"></div>
+              <div class="case-chip">BUSINESS / GROWTH</div>
+            </div>
+            <div class="case-content">
+              <div class="case-meta">
+                <span class="case-tag-item">Brand & Visual Identity</span>
+                <span class="case-year">ROCKET BUSINESS</span>
+              </div>
+              <h3 class="case-title">Como transformar crescimento em uma linguagem de marca?</h3>
+              <p class="case-desc">
+                Identidade desenvolvida para comunicar movimento, ambição e evolução dentro de um sistema visual consistente.
+              </p>
+              <div class="case-footer-action">
+                <span class="action-text">Conhecer o projeto</span>
+                <span class="action-arrow">→</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- FILEIRA 4 / CARD 8: LUKE WEB -->
+        <article class="case-card" data-category="identity" data-cursor="( Ver Case )">
+          <a href="https://www.behance.net/gallery/238648295/Luke-Web-Visual-Identity-Redesign" target="_blank" rel="noopener" class="case-card-inner">
+            <div class="case-media-holder">
+              <img src="assets/case_238648295.jpg" alt="Luke Web Visual Identity Redesign" class="case-media-img" loading="lazy">
+              <div class="case-media-overlay"></div>
+              <div class="case-chip">DIGITAL / REDESIGN</div>
+            </div>
+            <div class="case-content">
+              <div class="case-meta">
+                <span class="case-tag-item">Redesign de Identidade Visual</span>
+                <span class="case-year">LUKE WEB</span>
+              </div>
+              <h3 class="case-title">Como evoluir sem perder reconhecimento?</h3>
+              <p class="case-desc">
+                Um redesign orientado à evolução da presença digital, preservando continuidade enquanto ampliava clareza, legibilidade e versatilidade.
+              </p>
+              <div class="case-footer-action">
+                <span class="action-text">Conhecer o projeto</span>
+                <span class="action-arrow">→</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 05. SERVIÇOS -->
+    <section class="services-section" id="servicos">
+      <div class="section-container">
+        <div class="section-header-block">
+          <div class="section-tag">
+            <span class="tag-num">05</span>
+            <span class="tag-title">Serviços Especializados</span>
+          </div>
+          <h2 class="section-main-heading">
+            O QUE SUA MARCA PRECISA AGORA?
+          </h2>
+          <div class="services-intro-paragraphs">
+            <p>Nem toda empresa precisa da mesma solução.</p>
+            <p>Algumas estão começando. Outras cresceram e precisam se reposicionar. Algumas têm um problema visual. Outras precisam resolver primeiro uma questão estratégica.</p>
+            <p class="services-axiom">O diagnóstico vem antes da solução.</p>
+          </div>
+        </div>
+
+        <!-- Grid com os 9 Serviços Oficiais -->
+        <div class="services-grid">
+          
+          <div class="service-card">
+            <div class="service-num">01</div>
+            <h3 class="service-title">Brand Strategy</h3>
+            <p class="service-desc">
+              Antes de decidir como sua marca parece, definimos o que ela precisa representar. Posicionamento, público, diferenciação, personalidade e direção.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-num">02</div>
+            <h3 class="service-title">Naming</h3>
+            <p class="service-desc">
+              Nomes não começam em palavras bonitas. Começam em posicionamento. Criamos nomes capazes de carregar significado, personalidade e espaço para o negócio crescer.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-num">03</div>
+            <h3 class="service-title">Brand Creation</h3>
+            <p class="service-desc">
+              Para marcas que começam do zero: estratégia, linguagem e identidade construídas como partes de um mesmo sistema.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-num">04</div>
+            <h3 class="service-title">Visual Identity</h3>
+            <p class="service-desc">
+              Transformamos decisões estratégicas em uma linguagem visual reconhecível: logo, tipografia, cores, composição, imagem e códigos próprios.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-num">05</div>
+            <h3 class="service-title">Rebranding</h3>
+            <p class="service-desc">
+              Para negócios que mudaram, amadureceram ou cresceram — mas cuja marca ficou para trás.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-num">06</div>
+            <h3 class="service-title">Verbal Identity</h3>
+            <p class="service-desc">
+              Definimos como a marca fala: personalidade verbal, tom de voz, mensagens-chave, tagline e princípios de comunicação.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-num">07</div>
+            <h3 class="service-title">Creative Direction</h3>
+            <p class="service-desc">
+              Direção para garantir que estratégia, estética e comunicação continuem apontando para o mesmo lugar.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-num">08</div>
+            <h3 class="service-title">Brand Guidelines</h3>
+            <p class="service-desc">
+              Organizamos o sistema e suas regras para que a marca continue consistente quando sair das nossas mãos.
+            </p>
+          </div>
+
+          <div class="service-card highlight-card">
+            <div class="service-num">09</div>
+            <h3 class="service-title">Diagnóstico de Marca</h3>
+            <p class="service-desc">
+              Para empresas que sabem que algo precisa mudar, mas ainda não sabem exatamente o quê.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Fechamento Serviços -->
+        <div class="services-cta-banner">
+          <div class="banner-text-col">
+            <h3 class="banner-prompt">Não sabe exatamente o que precisa?</h3>
+            <p class="banner-subprompt">Tudo bem. Essa também é uma boa razão para começar pela estratégia.</p>
+          </div>
+          <div class="banner-btn-col">
+            <a href="#contato" class="btn-primary magnetic" data-strength="15">
+              <span>Conte sobre seu momento →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. ANTES DO DESIGN (METODOLOGIA PH) -->
+    <section class="method-section" id="metodo">
+      <div class="section-container">
+        <div class="section-header-block">
+          <div class="section-tag">
+            <span class="tag-num">06</span>
+            <span class="tag-title">Metodologia PH</span>
+          </div>
+          <h2 class="section-main-heading">
+            ANTES DO DESIGN.
+          </h2>
+          <div class="method-intro-paragraphs">
+            <p class="lead-strong">Toda identidade que você vê em nosso portfólio começou muito antes do primeiro layout.</p>
+            <p>Porque desenhar antes de entender pode produzir algo bonito. <em>Mas não necessariamente algo certo.</em></p>
+          </div>
+        </div>
+
+        <!-- 6 Etapas Estratégicas da Metodologia -->
+        <div class="method-steps-grid">
+
+          <div class="method-step-card">
+            <div class="step-num-top">01</div>
+            <span class="step-label">BRAND CORE</span>
+            <h3 class="step-heading">O que sustenta a marca?</h3>
+            <p class="step-text">
+              Definimos propósito, visão e valores para compreender o que precisa permanecer verdadeiro mesmo quando o negócio evolui.
+            </p>
+            <div class="step-deliverables-tags">
+              <span>Purpose</span> <span>Vision</span> <span>Core Values</span>
+            </div>
+          </div>
+
+          <div class="method-step-card">
+            <div class="step-num-top">02</div>
+            <span class="step-label">BRAND POSITIONING</span>
+            <h3 class="step-heading">Que espaço essa marca precisa ocupar?</h3>
+            <p class="step-text">
+              Investigamos público, mercado e objetivos de percepção para encontrar oportunidades reais de diferenciação.
+            </p>
+            <div class="step-deliverables-tags">
+              <span>Target Audience</span> <span>Market Analysis</span> <span>Awareness Goals</span>
+            </div>
+          </div>
+
+          <div class="method-step-card">
+            <div class="step-num-top">03</div>
+            <span class="step-label">BRAND PERSONA</span>
+            <h3 class="step-heading">Como essa marca deve ser percebida?</h3>
+            <p class="step-text">
+              Transformamos estratégia em personalidade, linguagem e uma forma própria de se expressar.
+            </p>
+            <div class="step-deliverables-tags">
+              <span>Brand Personality</span> <span>Brand Voice</span> <span>Brand Tagline</span>
+            </div>
+          </div>
+
+          <div class="method-step-card">
+            <div class="step-num-top">04</div>
+            <span class="step-label">CREATIVE DIRECTION</span>
+            <h3 class="step-heading">Território criativo & princípios</h3>
+            <p class="step-text">
+              Traduzimos a estratégia em território criativo, referências e princípios capazes de orientar as escolhas visuais.
+            </p>
+            <div class="step-deliverables-tags">
+              <span>Moodboards</span> <span>Design Principles</span> <span>Visual Territory</span>
+            </div>
+          </div>
+
+          <div class="method-step-card">
+            <div class="step-num-top">05</div>
+            <span class="step-label">VISUAL IDENTITY</span>
+            <h3 class="step-heading">Sistemas visuais completos</h3>
+            <p class="step-text">
+              Símbolo, logotipo, tipografia, cores, composição, direção de imagem e códigos visuais passam a formar um único sistema.
+            </p>
+            <div class="step-deliverables-tags">
+              <span>Logomarca</span> <span>Tipografia</span> <span>Cromática</span> <span>Grid</span>
+            </div>
+          </div>
+
+          <div class="method-step-card">
+            <div class="step-num-top">06</div>
+            <span class="step-label">BRAND SYSTEM</span>
+            <h3 class="step-heading">Aplicação & Governança</h3>
+            <p class="step-text">
+              Levamos a identidade para os pontos de contato onde a marca realmente precisa funcionar — digital, físico, comercial e institucional.
+            </p>
+            <div class="step-deliverables-tags">
+              <span>Touchpoints</span> <span>Manual de Marca</span> <span>Governança</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Fechamento da Metodologia -->
+        <div class="method-closing-manifesto">
+          <div class="closing-quote-box">
+            <p class="closing-axiom">Estratégia primeiro. Design depois.</p>
+            <p class="closing-sub">
+              Não porque design importa menos.<br>
+              <strong>Mas porque boas decisões fazem o design importar mais.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. NAMING -->
+    <section class="naming-section" id="naming">
+      <div class="section-container">
+        <div class="section-header-block">
+          <div class="section-tag">
+            <span class="tag-num">07</span>
+            <span class="tag-title">Processo de Naming</span>
+          </div>
+          <h2 class="section-main-heading">
+            UM NOME NÃO COMEÇA NO NOME.
+          </h2>
+          <div class="naming-intro-paragraphs">
+            <p class="naming-lead">Antes de procurar palavras, precisamos entender o que aquela empresa quer significar.</p>
+            <p>
+              Nosso processo de naming parte da estratégia para construir territórios verbais, explorar possibilidades e encontrar nomes coerentes com o posicionamento e a personalidade da marca.
+            </p>
+          </div>
+        </div>
+
+        <!-- Diagrama Linear de Naming -->
+        <div class="naming-flow-track">
+          <div class="naming-step">
+            <span class="n-num">01</span>
+            <span class="n-name">ESTRATÉGIA</span>
+          </div>
+          <div class="n-arrow">→</div>
+          <div class="naming-step">
+            <span class="n-num">02</span>
+            <span class="n-name">TERRITÓRIOS</span>
+          </div>
+          <div class="n-arrow">→</div>
+          <div class="naming-step">
+            <span class="n-num">03</span>
+            <span class="n-name">EXPLORAÇÃO</span>
+          </div>
+          <div class="n-arrow">→</div>
+          <div class="naming-step">
+            <span class="n-num">04</span>
+            <span class="n-name">CRITÉRIOS</span>
+          </div>
+          <div class="n-arrow">→</div>
+          <div class="naming-step">
+            <span class="n-num">05</span>
+            <span class="n-name">SELEÇÃO</span>
+          </div>
+          <div class="n-arrow">→</div>
+          <div class="naming-step highlight">
+            <span class="n-num">06</span>
+            <span class="n-name">DIREÇÃO</span>
+          </div>
+        </div>
+
+        <div class="naming-statement-banner">
+          <p class="banner-quote">
+            "Não procuramos apenas um nome que soe bem.<br>
+            <strong>Procuramos um nome que faça sentido para a marca que estamos construindo.</strong>"
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. IDENTIDADE VISUAL -->
+    <section class="identity-section" id="identidade">
+      <div class="section-container">
+        <div class="section-header-block">
+          <div class="section-tag">
+            <span class="tag-num">08</span>
+            <span class="tag-title">Sistemas Visuais</span>
+          </div>
+          <h2 class="section-main-heading">
+            NÃO DESENHAMOS PARA DEIXAR BONITO.<br>
+            <em>DESENHAMOS PARA DEIXAR CLARO QUEM VOCÊ É.</em>
+          </h2>
+          <div class="identity-intro-paragraphs">
+            <p class="lead-strong">Logo é parte da identidade. Não a identidade inteira.</p>
+            <p>
+              Construímos sistemas visuais capazes de criar reconhecimento, consistência e personalidade em diferentes pontos de contato — inclusive quando o logo não aparece.
+            </p>
+          </div>
+        </div>
+
+        <!-- 8 Pilares do Sistema Visual -->
+        <div class="identity-tokens-grid">
+          <div class="token-card">
+            <span class="token-index">01</span>
+            <h4 class="token-title">LOGO</h4>
+            <p class="token-desc">Símbolo proprietário, assinatura e proporções intencionais.</p>
+          </div>
+          <div class="token-card">
+            <span class="token-index">02</span>
+            <h4 class="token-title">TYPOGRAPHY</h4>
+            <p class="token-desc">Hierarquia, contraste e personalidade tipográfica calibrada.</p>
+          </div>
+          <div class="token-card">
+            <span class="token-index">03</span>
+            <h4 class="token-title">COLOR</h4>
+            <p class="token-desc">Paleta cromática autoral, contraste funcional e atmosfera.</p>
+          </div>
+          <div class="token-card">
+            <span class="token-index">04</span>
+            <h4 class="token-title">GRID</h4>
+            <p class="token-desc">Estruturas modulares, proporção áurea e arquitetura visual.</p>
+          </div>
+          <div class="token-card">
+            <span class="token-index">05</span>
+            <h4 class="token-title">IMAGE</h4>
+            <p class="token-desc">Direção de fotografia, enquadramentos e texturas de marca.</p>
+          </div>
+          <div class="token-card">
+            <span class="token-index">06</span>
+            <h4 class="token-title">GRAPHIC LANGUAGE</h4>
+            <p class="token-desc">Grafismos, ícones, traços e elementos de apoio proprietários.</p>
+          </div>
+          <div class="token-card">
+            <span class="token-index">07</span>
+            <h4 class="token-title">MOTION</h4>
+            <p class="token-desc">Comportamento de transição, ritmo e cinética da identidade.</p>
+          </div>
+          <div class="token-card">
+            <span class="token-index">08</span>
+            <h4 class="token-title">APPLICATION</h4>
+            <p class="token-desc">Desdobramento multicanal sem ruído e com máxima coerência.</p>
+          </div>
+        </div>
+
+        <div class="identity-closing-banner">
+          <p>
+            Uma marca forte não depende de uma peça bonita.<br>
+            <strong>Ela precisa continuar sendo reconhecível em todas elas.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09. LOGOFOLIO -->
+    <section class="logofolio-section" id="logofolio">
+      <div class="section-container">
+        <div class="section-header-block">
+          <div class="section-tag">
+            <span class="tag-num">09</span>
+            <span class="tag-title">Logofolio 2025 • Em Detalhes</span>
+          </div>
+          <h2 class="section-main-heading">
+            O PENSAMENTO PRECISA FUNCIONAR.<br>
+            <em>A FORMA TAMBÉM.</em>
+          </h2>
+          <div class="logofolio-intro-paragraphs">
+            <p class="lead-strong">Estratégia não é desculpa para design sem personalidade.</p>
+            <p>
+              Nosso Logofolio reúne uma seleção de símbolos e identidades desenvolvidos a partir de diferentes negócios, públicos e desafios.
+            </p>
+            <p>Não são exercícios para repetir um estilo. <strong>São respostas diferentes para problemas diferentes.</strong></p>
+          </div>
+        </div>
+
+        <!-- Matriz Interativa de Símbolos -->
+        <div class="logo-matrix">
+          <div class="logo-item magnetic" data-strength="20" data-cursor="( Kommando )">
+            <div class="logo-icon-svg">
+              <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="24" stroke="currentColor" stroke-width="2"/><circle cx="30" cy="30" r="12" stroke="currentColor" stroke-width="2" stroke-dasharray="4 2"/><circle cx="30" cy="30" r="4" fill="currentColor"/></svg>
+            </div>
+            <span class="logo-name">KOMMANDO</span>
+            <span class="logo-sub">Tático</span>
+          </div>
+
+          <div class="logo-item magnetic" data-strength="20" data-cursor="( Wolfen )">
+            <div class="logo-icon-svg">
+              <svg viewBox="0 0 60 60" fill="none"><path d="M12 45L30 15L48 45H12Z" stroke="currentColor" stroke-width="2"/><path d="M22 36L30 22L38 36H22Z" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <span class="logo-name">Wolfen Store</span>
+            <span class="logo-sub">Moda & Varejo</span>
+          </div>
+
+          <div class="logo-item magnetic" data-strength="20" data-cursor="( Conexa )">
+            <div class="logo-icon-svg">
+              <svg viewBox="0 0 60 60" fill="none"><rect x="15" y="15" width="30" height="30" rx="6" stroke="currentColor" stroke-width="2"/><path d="M15 30H45M30 15V45" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <span class="logo-name">CONEXA AI</span>
+            <span class="logo-sub">Deep Tech</span>
+          </div>
+
+          <div class="logo-item magnetic" data-strength="20" data-cursor="( Dankon )">
+            <div class="logo-icon-svg">
+              <svg viewBox="0 0 60 60" fill="none"><path d="M30 8C17.85 8 8 17.85 8 30C8 42.15 17.85 52 30 52C42.15 52 52 42.15 52 30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M30 18C23.37 18 18 23.37 18 30C18 36.63 23.37 42 30 42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <span class="logo-name">DANKON</span>
+            <span class="logo-sub">Corporativo</span>
+          </div>
+
+          <div class="logo-item magnetic" data-strength="20" data-cursor="( Aureum )">
+            <div class="logo-icon-svg">
+              <svg viewBox="0 0 60 60" fill="none"><path d="M15 15H45L30 45L15 15Z" stroke="currentColor" stroke-width="2"/><circle cx="30" cy="22" r="3" fill="currentColor"/></svg>
+            </div>
+            <span class="logo-name">Aureum</span>
+            <span class="logo-sub">Consultoria</span>
+          </div>
+
+          <div class="logo-item magnetic" data-strength="20" data-cursor="( PH Brandz )">
+            <div class="logo-icon-svg">
+              <svg viewBox="0 0 60 60" fill="none"><path d="M12 30C12 20.06 20.06 12 30 12C39.94 12 48 20.06 48 30C48 39.94 39.94 48 30 48" stroke="currentColor" stroke-width="2"/><line x1="20" y1="40" x2="40" y2="20" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <span class="logo-name">PH Brandz</span>
+            <span class="logo-sub">Studio</span>
+          </div>
+        </div>
+
+        <!-- Banner CTA Logofolio -->
+        <div class="logofolio-cta-banner">
+          <div class="banner-left">
+            <span class="banner-tag">( PROJETO COMPLETO NO BEHANCE )</span>
+            <h3 class="banner-title">Quer ver os estudos de caso, grid de construção e aplicações reais?</h3>
+          </div>
+          <a href="https://www.behance.net/gallery/241923721/Logofolio-2025-Brand-Strategy-Visual-Identity" target="_blank" rel="noopener" class="btn-primary magnetic" data-strength="15">
+            <span>Explorar Logofolio 2025 →</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H4.5M11.5 2.5V9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. IA + DIREÇÃO -->
+    <section class="ai-direction-section" id="ia-direcao">
+      <div class="section-container">
+        <div class="ai-box-editorial">
+          <div class="section-tag">
+            <span class="tag-num">10</span>
+            <span class="tag-title">Posicionamento • IA + Direção</span>
+          </div>
+          <h2 class="ai-headline">
+            TODO MUNDO PODE GERAR.<br>
+            <em>POUCOS SABEM DIRIGIR.</em>
+          </h2>
+          <div class="ai-content-body">
+            <p class="ai-lead">Novas ferramentas fazem parte do nosso processo.</p>
+            <p>IA pode acelerar exploração, ampliar possibilidades, testar caminhos e ajudar na produção.</p>
+            <p class="ai-question-lead">Mas alguém ainda precisa decidir o que faz sentido:</p>
+            <ul class="ai-questions-list">
+              <li>Qual caminho representa melhor o negócio?</li>
+              <li>O que diferencia?</li>
+              <li>O que deve permanecer?</li>
+              <li>O que precisa ser descartado?</li>
+            </ul>
+            <p class="ai-sum-text">Quanto mais fácil fica fazer, mais importante fica saber o que fazer.</p>
+          </div>
+          <div class="ai-signature-block">
+            <span class="ai-badge-pill">DIREÇÃO ESTRATÉGICA</span>
+            <h3 class="ai-signature-phrase">IA é processo. Não direção.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. ESTÚDIO / PAULO HENRIQUE -->
+    <section class="about-section" id="estudio">
+      <div class="about-grid-layout">
+        <div class="about-bio-col">
+          <div class="section-tag">
+            <span class="tag-num">11</span>
+            <span class="tag-title">Sobre o Estúdio • Fundador</span>
+          </div>
+          <h2 class="about-quote">
+            POR TRÁS DA PH EXISTE <em>CRITÉRIO</em>.
+          </h2>
+          <div class="about-paragraphs">
+            <p>
+              A <strong>PH Brandz</strong> é um estúdio de estratégia de marca e identidade visual dirigido por <strong>Paulo Henrique</strong>.
+            </p>
+            <p>
+              Trabalhamos principalmente com empresas que chegaram a um novo momento — seja começando uma marca, reposicionando um negócio existente ou percebendo que sua identidade já não representa aquilo que a empresa se tornou.
+            </p>
+            <p>
+              Nosso trabalho não começa procurando a forma mais bonita.
+            </p>
+            <p>
+              <strong>Começa tentando entender qual é o problema certo para resolver.</strong>
+            </p>
+            <p>
+              Estratégia, direção criativa e design trabalham juntos para transformar decisões de negócio em marcas mais claras, próprias e reconhecíveis.
+            </p>
+          </div>
+
+          <!-- Assinatura Oficial -->
+          <div class="author-official-signature">
+            <h3 class="author-name">Paulo Henrique</h3>
+            <span class="author-title">Founder / Brand Strategist / Designer</span>
+            <p class="author-tagline">Design & Strategy by Brandz.</p>
+          </div>
+        </div>
+
+        <div class="about-visual-col">
+          <div class="profile-card-sticky">
+            <div class="manifesto-photo-box">
+              <img src="assets/manifesto-portrait.jpg" alt="Paulo Henrique - Fundador PH Brandz" class="manifesto-img">
+              <img src="assets/phbz-tag.png" alt="phbz tag" class="manifesto-floating-tag">
+            </div>
+            <div class="profile-info-block">
+              <h3 class="profile-name">Paulo Henrique</h3>
+              <span class="profile-role">Design & Strategy by Brandz</span>
+              <span class="profile-location">📍 Goiânia, Goiás — Brasil</span>
+            </div>
+            <div class="profile-socials-row">
+              <a href="https://www.behance.net/phbrandz" target="_blank" rel="noopener" class="profile-social-btn magnetic" data-strength="10">Behance</a>
+              <a href="https://instagram.com/phbrandz" target="_blank" rel="noopener" class="profile-social-btn magnetic" data-strength="10">@phbrandz</a>
+              <a href="https://instagram.com/phdigitais" target="_blank" rel="noopener" class="profile-social-btn magnetic" data-strength="10">@phdigitais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. PROVA / NÚMEROS -->
+    <section class="proof-section" id="provas">
+      <div class="section-container">
+        <div class="section-header-block text-center">
+          <div class="section-tag center-tag">
+            <span class="tag-num">12</span>
+            <span class="tag-title">Prova & Reconhecimento</span>
+          </div>
+          <h2 class="section-main-heading">
+            HISTÓRICO COMPROVADO EM DESIGN DE MARCA
+          </h2>
+        </div>
+
+        <div class="proof-metrics-grid">
+          <div class="proof-box">
+            <span class="proof-num" data-target="21971">+21,9K</span>
+            <span class="proof-label">Visualizações de projetos no Behance</span>
+            <span class="proof-sub">Alcance global de cases publicados</span>
+          </div>
+
+          <div class="proof-box">
+            <span class="proof-num" data-target="2132">+2,1K</span>
+            <span class="proof-label">Apreciações de Curadoria</span>
+            <span class="proof-sub">Reconhecimento pela comunidade criativa</span>
+          </div>
+
+          <div class="proof-box">
+            <span class="proof-num">GOIÂNIA</span>
+            <span class="proof-label">Atendimento Estratégico</span>
+            <span class="proof-sub">Projetos no Brasil e no Exterior</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. DEPOIMENTOS -->
+    <section class="testimonials-section" id="depoimentos">
+      <div class="section-container">
+        <div class="section-header-block">
+          <div class="section-tag">
+            <span class="tag-num">13</span>
+            <span class="tag-title">Depoimentos de Clientes</span>
+          </div>
+          <h2 class="section-main-heading">
+            O RESULTADO NÃO TERMINA NA APRESENTAÇÃO.
+          </h2>
+          <p class="testimonials-lead">Uma marca precisa continuar fazendo sentido quando entra no mundo real.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="t-badge">PROBLEMA ANTERIOR → IMPACTO POSTERIOR</div>
+            <p class="t-quote">
+              "A marca que tínhamos comunicava o início da empresa, mas não a autoridade técnica que conquistamos. O trabalho da PH reposicionou totalmente a forma como novos clientes e o mercado nos enxergam."
+            </p>
+            <div class="t-client-row">
+              <div class="t-avatar-placeholder">KH</div>
+              <div>
+                <h4 class="t-client-name">Cliente Estratégico</h4>
+                <span class="t-client-role">Fundador & CEO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="t-badge">ESTRATÉGIA → IDENTIDADE</div>
+            <p class="t-quote">
+              "O diferencial foi não ir direto pro desenho. A imersão inicial mudou até a forma como explicamos nosso próprio produto para investidores. O sistema visual traduziu exatamente a sofisticação que precisávamos."
+            </p>
+            <div class="t-client-row">
+              <div class="t-avatar-placeholder">WF</div>
+              <div>
+                <h4 class="t-client-name">Diretoria Executiva</h4>
+                <span class="t-client-role">Co-founder</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="t-badge">REBRANDING & ESCALA</div>
+            <p class="t-quote">
+              "Nosso negócio amadureceu e a consistência visual virou chave para aumentar o ticket. Ter guidelines claros e um sistema autoral eliminou qualquer insegurança nas nossas apresentações comerciais."
+            </p>
+            <div class="t-client-row">
+              <div class="t-avatar-placeholder">DK</div>
+              <div>
+                <h4 class="t-client-name">Liderança de Negócios</h4>
+                <span class="t-client-role">Head de Operações</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. INSIGHTS -->
+    <section class="insights-section" id="insights">
+      <div class="section-container">
+        <div class="section-header-block">
+          <div class="section-tag">
+            <span class="tag-num">14</span>
+            <span class="tag-title">Pensamento Crítico</span>
+          </div>
+          <h2 class="section-main-heading">
+            PENSAMENTO TAMBÉM FAZ PARTE DO TRABALHO.
+          </h2>
+          <p class="insights-lead">Reflexões editoriais sobre estratégia de marca, design de impacto e diferenciação.</p>
+        </div>
+
+        <div class="insights-grid">
+          <article class="insight-card">
+            <span class="insight-tag">ESTRATÉGIA</span>
+            <h3 class="insight-title">Sua empresa cresceu. Sua marca também?</h3>
+            <p class="insight-summary">Quando a operação ganha escala, mas a identidade continua estagnada no passado.</p>
+            <span class="insight-more">Ler ensaio →</span>
+          </article>
+
+          <article class="insight-card">
+            <span class="insight-tag">REBRANDING</span>
+            <h3 class="insight-title">Quando uma empresa realmente precisa de rebranding?</h3>
+            <p class="insight-summary">Sinais claros de que é hora de mudar a marca em vez de tentar apenas consertar layouts.</p>
+            <span class="insight-more">Ler ensaio →</span>
+          </article>
+
+          <article class="insight-card">
+            <span class="insight-tag">NAMING</span>
+            <h3 class="insight-title">Naming: o que vem antes de escolher um nome?</h3>
+            <p class="insight-summary">Por que a busca por um bom nome deve começar nos territórios semânticos e no posicionamento.</p>
+            <span class="insight-more">Ler ensaio →</span>
+          </article>
+
+          <article class="insight-card">
+            <span class="insight-tag">SISTEMAS</span>
+            <h3 class="insight-title">Logo não é identidade visual. Então o que é?</h3>
+            <p class="insight-summary">A diferença fundamental entre um símbolo isolado e um sistema que sustenta uma empresa.</p>
+            <span class="insight-more">Ler ensaio →</span>
+          </article>
+
+          <article class="insight-card">
+            <span class="insight-tag">DIREÇÃO CRIATIVA</span>
+            <h3 class="insight-title">Quanto mais fácil fica criar, mais importante fica escolher.</h3>
+            <p class="insight-summary">O papel da curadoria humana e do critério estratégico em um ecossistema com ferramentas de IA.</p>
+            <span class="insight-more">Ler ensaio →</span>
+          </article>
+
+          <article class="insight-card">
+            <span class="insight-tag">PERCEPÇÃO & VALOR</span>
+            <h3 class="insight-title">Quando o preço ganha peso demais na decisão.</h3>
+            <p class="insight-summary">Como o design de marca atua diretamente na eliminação do atrito na hora de fechar contratos.</p>
+            <span class="insight-more">Ler ensaio →</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 15. FAQ -->
+    <section class="faq-section" id="faq">
+      <div class="section-container">
+        <div class="section-header-block">
+          <div class="section-tag">
+            <span class="tag-num">15</span>
+            <span class="tag-title">Perguntas Frequentes</span>
+          </div>
+          <h2 class="section-main-heading">
+            DÚVIDAS FREQUENTES
+          </h2>
+          <p class="faq-lead">Critério e clareza antes do primeiro contato.</p>
+        </div>
+
+        <div class="faq-accordion-list">
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">O que exatamente a PH faz?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p>Estratégia de marca, naming, criação e redesign de identidade visual, rebranding, identidade verbal, direção criativa e sistemas de marca.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">Minha empresa precisa de rebranding ou apenas de uma nova identidade?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p>Nem sempre é possível responder antes de entender o contexto. Por isso começamos diagnosticando o momento da empresa antes de recomendar a solução.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">Vocês fazem apenas logo?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p>Não. O logo é uma das partes de um sistema de identidade. Nosso trabalho começa antes dele e continua depois dele.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">Vocês atendem empresas fora de Goiânia?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p>Sim. Com um processo estruturado de imersão e reuniões estratégicas remotas, atendemos empresas em todo o Brasil e no exterior.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">Quanto tempo leva um projeto?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p>Projetos de identidade visual e estratégia costumam variar de 4 a 8 semanas, a depender da complexidade do diagnóstico e amplitude dos desdobramentos solicitados.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">Quanto custa?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p>O investimento é proporcional ao escopo, maturidade do negócio e entregáveis estratégicos necessários. Cada proposta é desenhada após a conversa de diagnóstico inicial.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 16. CTA FINAL (CONTATO) -->
+    <section class="contact-section" id="contato">
+      <div class="contact-inner-wrapper">
+        <div class="section-tag center-tag">
+          <span class="tag-num">16</span>
+          <span class="tag-title">Próximo Passo</span>
+        </div>
+
+        <h2 class="contact-title">
+          <span>SUA EMPRESA MUDOU.</span>
+          <span>SUA MARCA PODE <em>ACOMPANHAR</em>.</span>
+        </h2>
+
+        <div class="contact-lead-paragraphs">
+          <p>Se o negócio que você tem hoje já não parece a empresa representada pela sua marca, talvez exista uma conversa para termos.</p>
+          <p>Conte um pouco sobre o momento da sua empresa. Antes de propor qualquer solução, queremos entender o problema.</p>
+        </div>
+
+        <div class="contact-actions-row">
+          <a href="mailto:contato@phbrandz.design" class="big-cta-btn magnetic" data-strength="25" data-cursor="( Escrever )">
+            <span class="cta-label">INICIAR UM PROJETO →</span>
+            <span class="cta-circle-arrow">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 16L16 4M16 4H7M16 4V13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="contact-quick-options">
+          <a href="https://wa.me/5562999999999" target="_blank" rel="noopener" class="quick-link magnetic" data-strength="10">
+            <span>Conversar no WhatsApp →</span>
+          </a>
+          <span class="quick-sep">•</span>
+          <a href="https://www.behance.net/phbrandz" target="_blank" rel="noopener" class="quick-link magnetic" data-strength="10">
+            <span>Perfil Behance</span>
+          </a>
+          <span class="quick-sep">•</span>
+          <a href="https://www.behance.net/gallery/241923721/Logofolio-2025-Brand-Strategy-Visual-Identity" target="_blank" rel="noopener" class="quick-link magnetic" data-strength="10">
+            <span>Logofolio 2025</span>
+          </a>
+        </div>
+
+        <div class="contact-micro-footer">
+          <p class="m-strong">Estratégia primeiro. Design depois.</p>
+          <p class="m-sub">Design & Strategy by Brandz.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 17. FOOTER INSTITUCIONAL -->
+  <footer class="bottom-footer">
+    <div class="footer-grid">
+      <div class="footer-left">
+        <span class="footer-logo">PH BRANDZ®</span>
+        <p class="footer-subtitle">Strategy / Naming / Visual Identity / Rebranding</p>
+        <p class="footer-copy">Goiânia — Brasil • Projetos selecionados no Behance</p>
+      </div>
+
+      <div class="footer-center">
+        <span class="footer-motto">EMPRESAS BOAS NÃO DEVERIAM PARECER COMUNS.</span>
+        <span class="footer-signature-sub">Design & Strategy by Brandz.</span>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-nav-links">
+          <a href="https://instagram.com/phbrandz" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.behance.net/phbrandz" target="_blank" rel="noopener">Behance</a>
+          <a href="mailto:contato@phbrandz.design">E-mail</a>
+        </div>
+        <a href="#hero" class="back-to-top magnetic" data-strength="15">
+          <span>Voltar ao topo</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 11V3M7 3L3 7M7 3L11 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bibliotecas Externas: Lenis + GSAP + ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  
+  <script src="script.js?v=2"></script>
+</body>
+</html>

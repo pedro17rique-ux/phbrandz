@@ -1,0 +1,36 @@
+# ============================================================
+# PH BRANDZ — CABEÇALHOS DE SEGURANÇA HTTP (OWASP RECOMMENDED)
+# Compatível com Cloudflare Pages e Netlify
+# ============================================================
+
+/*
+  # Prevenção contra MIME Sniffing
+  X-Content-Type-Options: nosniff
+
+  # Prevenção contra Clickjacking (substituído pelo frame-ancestors em CSP moderna)
+  X-Frame-Options: DENY
+
+  # Controle estrito de vazamento de Referrer
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Restrição de APIs sensíveis de hardware do dispositivo
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=(), display-capture=()
+
+  # Forçar HTTPS com HSTS (1 ano, subdomínios, preload)
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+  # Isolamento de contexto de janela (COOP)
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+
+  # Proteção de recursos de mesma origem (CORP)
+  Cross-Origin-Resource-Policy: same-origin
+
+  # Política de Segurança de Conteúdo (CSP Restritiva)
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; media-src 'self' data: https:; frame-src https://www.youtube-nocookie.com; frame-ancestors 'none'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://forms.gle; upgrade-insecure-requests;
+
+# Bloqueio de arquivos de backup e rascunho
+/*.before-rework.*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/scratch
+  X-Robots-Tag: noindex, nofollow, noarchive

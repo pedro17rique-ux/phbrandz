@@ -1,0 +1,12 @@
+# ============================================================
+# PH BRANDZ — ROBOTS.TXT
+# ============================================================
+
+User-agent: *
+Allow: /
+Disallow: /*.before-rework.*
+Disallow: /scratch
+Disallow: /nginx-security.conf
+Disallow: /.htaccess
+Disallow: /_headers
+Disallow: /vercel.json

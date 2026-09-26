@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PH Brandz — Estratégia, Posicionamento & Identidade Visual</title>
+  <meta name="description" content="Criamos marcas que diferenciam, posicionam e param de competir por preço. Estratégia, naming e identidade visual por PH Brandz.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#080808">
+  <link rel="canonical" href="https://phbrandz.com/">
+
+  <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PH Brandz">
+  <meta property="og:url" content="https://phbrandz.com/">
+  <meta property="og:title" content="PH Brandz — Estratégia, Posicionamento & Identidade Visual">
+  <meta property="og:description" content="Criamos marcas que diferenciam, posicionam e param de competir por preço. Estratégia, naming e identidade visual por Pedro Henrique.">
+  <meta property="og:image" content="https://phbrandz.com/assets/phbrandz-brand-system.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://phbrandz.com/">
+  <meta name="twitter:title" content="PH Brandz — Estratégia, Posicionamento & Identidade Visual">
+  <meta name="twitter:description" content="Criamos marcas que diferenciam, posicionam e param de competir por preço. Estratégia, naming e identidade visual por PH Brandz.">
+  <meta name="twitter:image" content="https://phbrandz.com/assets/phbrandz-brand-system.webp">
+
+  <!-- Dados Estruturados Schema.org (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "PH Brandz",
+    "alternateName": "PH Brandz — Design & Strategy",
+    "founder": {
+      "@type": "Person",
+      "name": "Pedro Henrique",
+      "jobTitle": "Fundador e Diretor Criativo"
+    },
+    "url": "https://phbrandz.com",
+    "logo": "https://phbrandz.com/assets/phbrandz-wordmark.png",
+    "image": "https://phbrandz.com/assets/phbrandz-brand-system.webp",
+    "description": "Criamos marcas que diferenciam, posicionam e param de competir por preço. Estratégia, naming e identidade visual por PH Brandz.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Goiânia",
+      "addressRegion": "GO",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://www.instagram.com/phbrandz/",
+      "https://www.behance.net/phbrandz",
+      "https://www.youtube.com/@phbrandz"
+    ]
+  }
+  </script>
+
+  <!-- Segurança e Privacidade (OWASP Baseline) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; media-src 'self' data: https:; frame-src https://www.youtube-nocookie.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://forms.gle; upgrade-insecure-requests;">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/ph-avatar.png">
+
+  <!-- Google Fonts: Inter + Syne + Newsreader (Ivy Presto style) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=cta-commercial-v4">
+</head>
+<body>
+
+  <!-- Textura Cinemática de Grain -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Ambient Light Glow Suave -->
+  <div class="ambient-glow" id="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Barra de Progresso Superior -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Custom Cursor Dinâmico em Asterisco (*) com Estados Neutro, Verde e Azul -->
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true">
+    <div class="cursor-asterisk" id="cursor-asterisk">
+      <svg class="asterisk-svg" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="12" y1="2" x2="12" y2="22"></line>
+        <line x1="3.34" y1="7" x2="20.66" y2="17"></line>
+        <line x1="3.34" y1="17" x2="20.66" y2="7"></line>
+      </svg>
+    </div>
+    <div class="cursor-ring"></div>
+    <span class="cursor-badge" id="cursor-badge"></span>
+  </div>
+
+  <!-- Modal de Vídeo Sob Demanda (Koombo, Buy Home e Filme Institucional) -->
+  <div class="video-modal" id="video-modal" aria-hidden="true" role="dialog" aria-label="Player de vídeo">
+    <div class="video-modal-backdrop" id="modal-backdrop"></div>
+    <div class="video-modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Fechar vídeo">✕</button>
+      <div class="video-iframe-wrapper">
+        <iframe id="modal-video-frame" src="" title="Vídeo PH Brandz" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" sandbox="allow-scripts allow-same-origin allow-presentation"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVEGAÇÃO SUPERIOR -->
+  <header class="top-nav" id="top-nav">
+    <div class="nav-left">
+      <a href="#hero" class="nav-brand magnetic" data-strength="15">
+        <img src="assets/phbrandz-wordmark.png" alt="PH Brandz" class="nav-brand-logo">
+      </a>
+      <div class="live-pill">
+        <span class="live-dot pulse"></span>
+        <span class="live-text" id="live-status">Goiânia <span id="live-clock">--:--</span> • Disponível</span>
+      </div>
+    </div>
+
+    <!-- Menu Principal -->
+    <nav class="nav-center-menu" aria-label="Navegação principal">
+      <a href="#projetos" class="nav-menu-link">Projetos</a>
+      <span class="nav-menu-sep">/</span>
+      <a href="#servicos" class="nav-menu-link">Serviços</a>
+      <span class="nav-menu-sep">/</span>
+      <a href="#processo" class="nav-menu-link">Processo</a>
+      <span class="nav-menu-sep">/</span>
+      <a href="#sobre" class="nav-menu-link">PH Brandz</a>
+      <span class="nav-menu-sep">/</span>
+      <a href="#contato" class="nav-menu-link">Contato</a>
+    </nav>
+
+    <div class="nav-right">
+      <a href="#contato" class="btn-talk magnetic" data-strength="15" data-cursor-state="green">
+        <span>Entre em contato</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- MENU FLUTUANTE DOCK NA BASE (Estilo Blnks.co) -->
+  <nav class="floating-dock" id="floating-dock" aria-label="Menu rápido">
+    <div class="dock-inner">
+      <a href="#projetos" class="dock-link" data-cursor="( Projetos )">
+        <span class="dock-bracket">(</span><span class="dock-title">Projetos</span><span class="dock-bracket">)</span>
+      </a>
+      <a href="#servicos" class="dock-link" data-cursor="( Serviços )">
+        <span class="dock-bracket">(</span><span class="dock-title">Serviços</span><span class="dock-bracket">)</span>
+      </a>
+      <a href="#processo" class="dock-link" data-cursor="( Processo )">
+        <span class="dock-bracket">(</span><span class="dock-title">Processo</span><span class="dock-bracket">)</span>
+      </a>
+      <a href="#filme" class="dock-link" data-cursor="( Filme )" data-cursor-state="blue">
+        <span class="dock-bracket">(</span><span class="dock-title">Filme</span><span class="dock-bracket">)</span>
+      </a>
+      <a href="#sobre" class="dock-link" data-cursor="( Sobre )">
+        <span class="dock-bracket">(</span><span class="dock-title">PH Brandz</span><span class="dock-bracket">)</span>
+      </a>
+      <a href="#contato" class="dock-link" data-cursor="( Contato )" data-cursor-state="green">
+        <span class="dock-bracket">(</span><span class="dock-title">Contato</span><span class="dock-bracket">)</span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- 01. HERO -->
+    <section class="hero-section" id="hero">
+      <div class="hero-watermark" data-speed="0.2">BRANDZ</div>
+      
+      <div class="hero-container">
+        
+        <!-- Eyebrow & Assinatura Oficial -->
+        <div class="hero-meta-row">
+          <div class="tag-label">
+            <span class="tag-bracket">[</span>
+            <span class="tag-text">ESTRATÉGIA • POSICIONAMENTO • IDENTIDADE VISUAL</span>
+            <span class="tag-bracket">]</span>
+          </div>
+          <div class="hero-signature-official">
+            <span class="sig-bullet">✦</span>
+            <strong>Design &amp; Strategy, by Brandz.</strong>
+          </div>
+        </div>
+
+        <!-- Motion Oficial Centralizado com Efeito Portal de Zoom no Scroll -->
+        <div class="hero-portal-wrap" id="hero-portal-wrap" data-cursor="( Expandir )">
+          <div class="hero-tilt-card" id="hero-tilt-card">
+            <div class="card-reflection"></div>
+            <div class="card-media-box">
+              <picture class="hero-media-picture">
+                <source srcset="assets/phbrandz-snapeh-poster.jpg" media="(prefers-reduced-motion: reduce)">
+                <source srcset="assets/phbrandz-snapeh-animated.webp" type="image/webp">
+                <img src="assets/phbrandz-snapeh.gif" alt="PH Brandz — Motion Oficial Sphere" class="hero-media-img" width="1920" height="700" loading="eager" decoding="async">
+              </picture>
+              <div class="card-floating-badge">
+                <span class="badge-pulse"></span>
+                <span>MOTION OFICIAL • CENTRAL PH</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nova Promessa Aprovada Centralizada Abaixo do Motion -->
+        <div class="hero-headline-wrap">
+          <h1 class="hero-h1">
+            Criamos marcas que <em>diferenciam</em>, posicionam e param de competir por preço.
+          </h1>
+          <p class="hero-manifesto-text">
+            A PH Brandz combina estratégia, posicionamento e identidade visual para transformar empresas em marcas mais claras, desejadas e valiosas.
+          </p>
+        </div>
+
+        <!-- CTAs Aprovados -->
+        <div class="hero-actions-row">
+          <a href="#contato" class="btn-primary magnetic" data-strength="15" data-cursor-state="green">
+            <span>Entre em contato →</span>
+          </a>
+          <a href="#projetos" class="btn-secondary magnetic" data-strength="15" data-cursor-state="blue">
+            <span>Ver projetos →</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Marquee Ticker Sutil -->
+      <div class="brand-ticker">
+        <div class="ticker-track">
+          <span>BRANDING ESTRATÉGICO</span> <span class="t-sep">✦</span>
+          <span>REBRANDING</span> <span class="t-sep">✦</span>
+          <span>NAMING</span> <span class="t-sep">✦</span>
+          <span>IDENTIDADE VISUAL</span> <span class="t-sep">✦</span>
+          <span>EXPERIÊNCIA DE MARCA</span> <span class="t-sep">✦</span>
+          <span>DESIGN &amp; STRATEGY, BY BRANDZ.</span> <span class="t-sep">✦</span>
+          <span>BRANDING ESTRATÉGICO</span> <span class="t-sep">✦</span>
+          <span>REBRANDING</span> <span class="t-sep">✦</span>
+          <span>NAMING</span> <span class="t-sep">✦</span>
+          <span>IDENTIDADE VISUAL</span> <span class="t-sep">✦</span>
+          <span>EXPERIÊNCIA DE MARCA</span> <span class="t-sep">✦</span>
+          <span>DESIGN &amp; STRATEGY, BY BRANDZ.</span> <span class="t-sep">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. TENSÃO DE NEGÓCIO -->
+    <section class="tension-section" id="tensao">
+      <div class="section-container">
+        <div class="section-tag">
+          <span class="tag-num">02</span>
+          <span class="tag-title">Quando o negócio cresce mais rápido do que a marca</span>
+        </div>
+
+        <div class="tension-grid">
+          <div class="tension-lead-col">
+            <h2 class="tension-heading scrub-reveal-text">
+              Sua empresa pode entregar muito e ainda parecer <em>comum</em>.
+            </h2>
+          </div>
+
+          <div class="tension-body-col">
+            <p class="tension-desc scrub-reveal-text">
+              Isso acontece quando o cliente não entende a diferença, a proposta precisa explicar demais e o preço vira o principal critério de comparação.
+            </p>
+            <div class="tension-quote-box">
+              <span class="tension-quote-icon">✦</span>
+              <p class="tension-quote-text scrub-reveal-text">
+                O problema nem sempre está no que a empresa entrega. Pode estar no que o mercado consegue perceber.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSIÇÃO EDITORIAL • PORTAL DE PROFUNDIDADE -->
+    <div class="editorial-portal-strip" data-cursor="( Explorar )" data-cursor-state="blue">
+      <div class="section-container">
+        <div class="portal-media-frame">
+          <img src="assets/phbrandz-glass-spheres.webp" alt="PH Brandz — Portal de profundidade conceitual e refrações" loading="lazy">
+          <div class="portal-overlay"></div>
+          <div class="portal-caption-badge">
+            <span class="portal-badge-dot">✦</span>
+            <span class="portal-badge-text">PROFUNDIDADE &amp; SISTEMA • BRAND STRATEGY BY BRANDZ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03. PROJETOS / CANAIS (CENTRAL PH) -->
+    <section class="cases-section" id="projetos">
+      <div class="section-container">
+        <div class="section-header-block">
+          <div class="section-tag">
+            <span class="tag-num">03</span>
+            <span class="tag-title">Projetos / Canais da Central PH</span>
+          </div>
+          <div class="section-head-title-row">
+            <div>
+              <h2 class="section-main-heading">
+                Projetos forjados para mudar a <em>percepção</em>
+              </h2>
+              <p class="section-subtitle-text">Cada case prova uma competência estratégica e visual diferente.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Editorial Cases Stack Oficial -->
+        <div class="editorial-cases-stack">
+
+          <!-- CH01 - KOMMANDO -->
+          <article class="case-editorial-block" id="case-kommando">
+            <div class="case-editorial-header">
+              <div class="case-meta-line">
+                <div class="ch-badge-editorial">
+                  <span class="ch-badge-code">CH01</span>
+                  <span class="ch-badge-sep">•</span>
+                  <span class="ch-badge-cat">Identidade visual e posicionamento</span>
+                </div>
+                <div class="case-competence-pill">
+                  <span class="comp-bullet">✦</span>
+                  <span>Competência provada: Autoridade e diferenciação de categoria</span>
+                </div>
+              </div>
+              <div class="case-editorial-title-row">
+                <h3 class="case-editorial-title">
+                  Autoridade não precisa parecer igual ao restante do <em>setor</em>.
+                </h3>
+                <p class="case-editorial-desc">
+                  A Kommando precisava comunicar precisão, presença e confiança sem repetir os mesmos códigos visuais das empresas de segurança. Criamos um sistema proprietário, técnico e reconhecível.
+                </p>
+                <div class="case-editorial-cta-wrap">
+                  <a href="https://www.behance.net/gallery/210110457/KOMMANDO-Visual-Identity" target="_blank" rel="noopener noreferrer" class="btn-case-editorial" data-cursor="( Ver Case )" data-cursor-state="green">
+                    <span>Ver case completo no Behance</span>
+                    <span class="arrow-ico">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Galeria Editorial: Imagens com relevância -->
+            <div class="case-editorial-gallery">
+              <div class="case-lead-media" data-cursor="( Expandir )">
+                <img src="assets/kommando-case.webp" alt="Kommando — Apresentação principal do sistema de identidade visual" loading="lazy">
+                <div class="media-caption-badge">
+                  <span class="caption-dot"></span>
+                  <span>Apresentação Principal • Sistema Proprietário</span>
+                </div>
+              </div>
+              <div class="case-subgrid-duo">
+                <div class="case-sub-media" data-cursor="( Campanha )">
+                  <img src="assets/kommando-posters.jpg" alt="Kommando — Campanha e desdobramento gráfico" loading="lazy">
+                  <div class="media-caption-badge">
+                    <span>Campanha &amp; Linguagem Aplicada</span>
+                  </div>
+                </div>
+                <div class="case-sub-media" data-cursor="( Digital )">
+                  <img src="assets/kommando-digital.jpg" alt="Kommando — Presença digital e plataforma" loading="lazy">
+                  <div class="media-caption-badge">
+                    <span>Presença Digital &amp; Interface</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CH02 - KOOMBO (VÍDEO + EDITORIAL) -->
+          <article class="case-editorial-block" id="case-koombo">
+            <div class="case-editorial-header">
+              <div class="case-meta-line">
+                <div class="ch-badge-editorial">
+                  <span class="ch-badge-code">CH02</span>
+                  <span class="ch-badge-sep">•</span>
+                  <span class="ch-badge-cat">Naming e identidade visual</span>
+                </div>
+                <div class="case-competence-pill">
+                  <span class="comp-bullet">✦</span>
+                  <span>Competência provada: Naming e construção de significado</span>
+                </div>
+              </div>
+              <div class="case-editorial-title-row">
+                <h3 class="case-editorial-title">
+                  Um bom nome não explica tudo. Ele abre <em>espaço</em> para a marca crescer.
+                </h3>
+                <p class="case-editorial-desc">
+                  Koombo nasceu da ideia de combinação. Nome, linguagem e identidade foram construídos juntos para formar uma marca simples de lembrar, flexível e preparada para diferentes experiências.
+                </p>
+                <div class="case-editorial-cta-wrap">
+                  <button class="btn-case-editorial video-trigger-btn" data-video-id="j6R_FSDtMMA" data-video-title="Filme Koombo — Naming &amp; Identidade Visual" data-cursor="( Assistir )" data-cursor-state="blue">
+                    <span class="play-symbol">▶</span>
+                    <span>Assistir ao filme do case</span>
+                  </button>
+                  <a href="https://www.behance.net/gallery/217779907/KOOMBO-Naming-Branding" target="_blank" rel="noopener noreferrer" class="btn-case-secondary" data-cursor="( Ver Case )">
+                    <span>Ver no Behance →</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-editorial-gallery">
+              <div class="case-lead-media video-trigger-box" data-video-id="j6R_FSDtMMA" data-video-title="Filme Koombo — Naming &amp; Identidade Visual" data-cursor="( Assistir )" data-cursor-state="blue">
+                <img src="assets/case_koombo.jpg" alt="Koombo — Apresentação principal e filme institucional" loading="lazy">
+                <button class="play-overlay-btn" aria-label="Assistir ao filme Koombo">
+                  <span class="play-triangle">▶</span>
+                </button>
+                <div class="media-caption-badge">
+                  <span class="caption-dot live"></span>
+                  <span>Filme Oficial • Naming &amp; Identidade Visual (YouTube)</span>
+                </div>
+              </div>
+
+              <!-- Trio Grid: Naming + Experiência + Digital -->
+              <div class="case-subgrid-trio">
+                <div class="case-sub-media" data-cursor="( Naming )">
+                  <img src="assets/koombo-naming.webp" alt="Koombo — Raciocínio que sustenta a criação do nome" loading="lazy">
+                  <div class="media-caption-badge">
+                    <span>Raciocínio por trás do Nome</span>
+                  </div>
+                </div>
+                <div class="case-sub-media" data-cursor="( Embalagem )">
+                  <img src="assets/koombo-experience.webp" alt="Koombo — Marca aplicada à experiência de consumo e embalagens" loading="lazy">
+                  <div class="media-caption-badge">
+                    <span>Experiência de Consumo &amp; Packaging</span>
+                  </div>
+                </div>
+                <div class="case-sub-media" data-cursor="( App )">
+                  <img src="assets/koombo-digital.jpg" alt="Koombo — Produto e interface digital" loading="lazy">
+                  <div class="media-caption-badge">
+                    <span>Produto &amp; Interface Digital</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CH03 - BUY HOME (SHOWROOM VÍDEO + EDITORIAL) -->
+          <article class="case-editorial-block" id="case-buyhome">
+            <div class="case-editorial-header">
+              <div class="case-meta-line">
+                <div class="ch-badge-editorial">
+                  <span class="ch-badge-code">CH03</span>
+                  <span class="ch-badge-sep">•</span>
+                  <span class="ch-badge-cat">Branding e experiência de marca</span>
+                </div>
+                <div class="case-competence-pill">
+                  <span class="comp-bullet">✦</span>
+                  <span>Competência provada: Posicionamento de alto padrão e coerência de ecossistema</span>
+                </div>
+              </div>
+              <div class="case-editorial-title-row">
+                <h3 class="case-editorial-title">
+                  O espaço também <em>posiciona</em>.
+                </h3>
+                <p class="case-editorial-desc">
+                  A Buy Home precisava tornar a compra de imóveis mais clara, confiável e personalizada. A estratégia saiu da identidade e chegou ao showroom, à comunicação e à experiência do cliente.
+                </p>
+                <div class="case-editorial-cta-wrap">
+                  <button class="btn-case-editorial video-trigger-btn" data-video-id="yjDhOfPRhzk" data-video-title="Showroom Buy Home — Branding e experiência de marca" data-cursor="( Assistir )" data-cursor-state="blue">
+                    <span class="play-symbol">▶</span>
+                    <span>Assistir ao showroom</span>
+                  </button>
+                  <a href="https://www.behance.net/gallery/210655637/BUYHOME-Branding-and-Visual-Identity" target="_blank" rel="noopener noreferrer" class="btn-case-secondary" data-cursor="( Ver Case )">
+                    <span>Ver no Behance →</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-editorial-gallery">
+              <div class="case-lead-media video-trigger-box" data-video-id="yjDhOfPRhzk" data-video-title="Showroom Buy Home" data-cursor="( Assistir Showroom )" data-cursor-state="blue">
+                <img src="assets/buyhome-showroom.webp" alt="Buy Home — Identidade no showroom e materiais físicos (Vídeo)" loading="lazy">
+                <button class="play-overlay-btn" aria-label="Assistir ao showroom Buy Home">
+                  <span class="play-triangle">▶</span>
+                </button>
+                <div class="media-caption-badge">
+                  <span class="caption-dot live"></span>
+                  <span>Showroom &amp; Materiais Físicos (Vídeo)</span>
+                </div>
+              </div>
+              <div class="case-subgrid-duo">
+                <div class="case-sub-media" data-cursor="( Expandir )">
+                  <img src="assets/buyhome-case.webp" alt="Buy Home — Abertura e universo visual imobiliário alto padrão" loading="lazy">
+                  <div class="media-caption-badge">
+                    <span class="caption-dot"></span>
+                    <span>Abertura Visual • Posicionamento Alto Padrão</span>
+                  </div>
+                </div>
+                <div class="case-sub-media" data-cursor="( Mobile )">
+                  <img src="assets/buyhome-digital.jpg" alt="Buy Home — Presença digital e pontos de contato mobile" loading="lazy">
+                  <div class="media-caption-badge">
+                    <span>Presença Digital &amp; Mobile Stories</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CH04 - DANKON ALIMENTOS -->
+          <article class="case-editorial-block" id="case-dankon">
+            <div class="case-editorial-header">
+              <div class="case-meta-line">
+                <div class="ch-badge-editorial">
+                  <span class="ch-badge-code">CH04</span>
+                  <span class="ch-badge-sep">•</span>
+                  <span class="ch-badge-cat">Branding e design de embalagem</span>
+                </div>
+                <div class="case-competence-pill">
+                  <span class="comp-bullet">✦</span>
+                  <span>Competência demonstrada: Branding aplicado à embalagem e ao ponto de venda</span>
+                </div>
+              </div>
+              <div class="case-editorial-title-row">
+                <h3 class="case-editorial-title">
+                  A embalagem vende antes da primeira <em>prova</em>.
+                </h3>
+                <p class="case-editorial-desc">
+                  Para a Dankon, a identidade precisava funcionar na prateleira. Criamos uma família completa de embalagens com reconhecimento imediato, apetite visual e consistência entre diferentes categorias de produtos.
+                </p>
+                <div class="case-editorial-cta-wrap">
+                  <a href="https://www.behance.net/gallery/241940875/DANKON-Brand-Creation-Visual-Identity" target="_blank" rel="noopener noreferrer" class="btn-case-editorial" data-cursor="( Ver Case )" data-cursor-state="green">
+                    <span>Ver aplicações no Behance</span>
+                    <span class="arrow-ico">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Família Dankon em Sequência de Scroll (Regra Pacote 2) -->
+            <div class="dankon-scroll-sequence" data-cursor="( Deslizar )">
+              <div class="dankon-sequence-track">
+                
+                <!-- Pack 01: Linha Tradicional Saudável -->
+                <div class="dankon-pack-card">
+                  <div class="pack-media-wrap">
+                    <img src="assets/dankon-pack-01.jpg" alt="Dankon — Família de embalagens sem glúten em bancada artesanal" loading="lazy">
+                    <div class="media-caption-badge">
+                      <span class="caption-dot"></span>
+                      <span>Linha Saudável Sem Glúten • Stand-up Pouches</span>
+                    </div>
+                  </div>
+                  <div class="pack-card-info">
+                    <h4>Linha Saudável Sem Glúten</h4>
+                    <p>Biscoitos de cacau, laranja, petas e cookies artesanais em stand-up pouches de alto impacto.</p>
+                  </div>
+                </div>
+
+                <!-- Pack 02: Dankilhos Gourmet -->
+                <div class="dankon-pack-card">
+                  <div class="pack-media-wrap">
+                    <img src="assets/dankon-pack-02.jpg" alt="Dankon — Linha Dankilhos Gourmet assados à lareira" loading="lazy">
+                    <div class="media-caption-badge">
+                      <span class="caption-dot"></span>
+                      <span>Linha Dankilhos Gourmet • Snacks Nobres</span>
+                    </div>
+                  </div>
+                  <div class="pack-card-info">
+                    <h4>Linha Dankilhos Gourmet</h4>
+                    <p>Snacks finos assados nos sabores Gourmet, Queijo e Picante, valorizando os ingredientes nobres.</p>
+                  </div>
+                </div>
+
+                <!-- Pack 03: Dankitos Infantil -->
+                <div class="dankon-pack-card">
+                  <div class="pack-media-wrap">
+                    <img src="assets/dankon-pack-03.jpg" alt="Dankon — Linha infantil temática Dankitos" loading="lazy">
+                    <div class="media-caption-badge">
+                      <span class="caption-dot"></span>
+                      <span>Linha Infantil Dankitos • Personagens &amp; Lúdico</span>
+                    </div>
+                  </div>
+                  <div class="pack-card-info">
+                    <h4>Linha Infantil Dankitos</h4>
+                    <p>Universo lúdico e aventureiro para o público infantil, unindo diversão, apetite appeal e saudabilidade.</p>
+                  </div>
+                </div>
+
+                <!-- Padrão Gráfico e Ponto de Venda -->
+                <div class="dankon-pack-card">
+                  <div class="pack-media-wrap">
+                    <img src="assets/dankon-pattern.jpg" alt="Dankon — Padronagem e consistência no ponto de venda" loading="lazy">
+                    <div class="media-caption-badge">
+                      <span class="caption-dot live"></span>
+                      <span>PDV • Consistência &amp; Reconhecimento de Gôndola</span>
+                    </div>
+                  </div>
+                  <div class="pack-card-info">
+                    <h4>Presença no Ponto de Venda</h4>
+                    <p>Linguagem cromática modular criada para dominar o campo de visão na prateleira.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- CH05 - HOD SOLUÇÕES -->
+          <article class="case-editorial-block" id="case-hod">
+            <div class="case-editorial-header">
+              <div class="case-meta-line">
+                <div class="ch-badge-editorial">
+                  <span class="ch-badge-code">CH05</span>
+                  <span class="ch-badge-sep">•</span>
+                  <span class="ch-badge-cat">Rebranding estratégico</span>
+                </div>
+                <div class="case-competence-pill">
+                  <span class="comp-bullet">✦</span>
+                  <span>Competência demonstrada: Rebranding que une tradição e futuro</span>
+                </div>
+              </div>
+              <div class="case-editorial-title-row">
+                <h3 class="case-editorial-title">
+                  Como modernizar uma marca sem apagar o que construiu sua <em>autoridade</em>?
+                </h3>
+                <p class="case-editorial-desc">
+                  Na HOD, tradição não virou decoração. Virou estrutura para o futuro. O desafio era incorporar o legado e a modernidade em uma marca coerente, preservando memória e autoridade enquanto prepara a empresa para uma presença mais contemporânea.
+                </p>
+                <div class="case-editorial-cta-wrap">
+                  <div class="case-status-badge">
+                    <span class="badge-dot-amber">✦</span>
+                    <span>Case Estratégico • Apresentação sob consulta</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-editorial-gallery">
+              <div class="case-lead-media" data-cursor="( Expandir )">
+                <img src="assets/hod-environment.webp" alt="HOD Soluções — Presença arquitetônica e fachada institucional" loading="lazy">
+                <div class="media-caption-badge">
+                  <span class="caption-dot"></span>
+                  <span>Presença Arquitetônica • Fachada Institucional</span>
+                </div>
+              </div>
+              <div class="case-subgrid-duo">
+                <div class="case-sub-media" data-cursor="( Digital )">
+                  <img src="assets/case_225645753.jpg" alt="HOD Soluções — Desdobramento digital e ecossistema de marca" loading="lazy">
+                  <div class="media-caption-badge">
+                    <span>Desdobramento Digital &amp; Interface</span>
+                  </div>
+                </div>
+                <div class="case-sub-media" data-cursor="( Conceito )">
+                  <img src="assets/hod-totem.jpg" alt="HOD Soluções — Totem OOH, posicionamento e manifesto" loading="lazy">
+                  <div class="media-caption-badge">
+                    <span>Totem OOH • Posicionamento &amp; Manifesto</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CH06 - AUREUM SOLUÇÕES -->
+          <article class="case-editorial-block" id="case-aureum">
+            <div class="case-editorial-header">
+              <div class="case-meta-line">
+                <div class="ch-badge-editorial">
+                  <span class="ch-badge-code">CH06</span>
+                  <span class="ch-badge-sep">•</span>
+                  <span class="ch-badge-cat">Estratégia e identidade</span>
+                </div>
+                <div class="case-competence-pill">
+                  <span class="comp-bullet">✦</span>
+                  <span>Competência demonstrada: Estratégia e identidade para organizar uma oferta complexa</span>
+                </div>
+              </div>
+              <div class="case-editorial-title-row">
+                <h3 class="case-editorial-title">
+                  Quando a oferta é complexa, a marca precisa organizar a <em>percepção</em>.
+                </h3>
+                <p class="case-editorial-desc">
+                  A Aureum foi estruturada para comunicar soluções corporativas com clareza, elegância e confiança. Estratégia, posicionamento e sistema visual transformam complexidade em presença e autoridade no mercado.
+                </p>
+                <div class="case-editorial-cta-wrap">
+                  <div class="case-status-badge">
+                    <span class="badge-dot-amber">✦</span>
+                    <span>Case Estratégico • Apresentação sob consulta</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-editorial-gallery">
+              <div class="case-lead-media" data-cursor="( Expandir )">
+                <img src="assets/aureum-environment.webp" alt="Aureum Soluções — Presença institucional e comunicação de prestígio" loading="lazy">
+                <div class="media-caption-badge">
+                  <span class="caption-dot"></span>
+                  <span>Presença Institucional &amp; OOH Corporativo</span>
+                </div>
+              </div>
+              <div class="case-subgrid-duo">
+                <div class="case-sub-media" data-cursor="( Editorial )">
+                  <img src="assets/aureum-editorial.webp" alt="Aureum Soluções — Sistema de papelaria e acabamento editorial" loading="lazy">
+                  <div class="media-caption-badge">
+                    <span>Sistema de Identidade &amp; Acabamento</span>
+                  </div>
+                </div>
+                <div class="case-sub-media" data-cursor="( Digital )">
+                  <img src="assets/case_227249715.jpg" alt="Aureum Soluções — Presença digital e embalagem corporativa" loading="lazy">
+                  <div class="media-caption-badge">
+                    <span>Presença Digital &amp; Packaging</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. SERVIÇOS -->
+    <section class="services-section" id="servicos">
+      <div class="section-container">
+        <div class="section-header-block">
+          <div class="section-tag">
+            <span class="tag-num">04</span>
+            <span class="tag-title">O que a PH resolve</span>
+          </div>
+          <h2 class="section-main-heading">
+            A marca certa para o momento real da <em>empresa</em>.
+          </h2>
+        </div>
+
+        <div class="services-grid-4">
+          
+          <div class="service-card-clean">
+            <div class="service-card-head">
+              <span class="service-idx">01</span>
+              <span class="service-badge-pill">Escopo Completo</span>
+            </div>
+            <h3 class="service-item-title">Branding estratégico + identidade visual</h3>
+            <p class="service-item-desc">
+              Para empresas que já validaram o negócio, mas ainda comunicam de forma improvisada, genérica ou menor do que realmente são.
+            </p>
+            <div class="service-scope-tags">
+              <span>Posicionamento</span>
+              <span>Identidade Visual</span>
+              <span>Brand Guidelines</span>
+              <span>Códigos de Marca</span>
+            </div>
+            <a href="https://wa.me/5562993193775?text=Ol%C3%A1%2C%20Pedro.%20Gostaria%20de%20conversar%20sobre%20Branding%20Estrat%C3%A9gico%20e%20Identidade%20Visual." target="_blank" rel="noopener noreferrer" class="service-card-action" data-cursor="( Iniciar )" data-cursor-state="green">
+              <span>Solicitar este escopo</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </div>
+
+          <div class="service-card-clean">
+            <div class="service-card-head">
+              <span class="service-idx">02</span>
+              <span class="service-badge-pill">Transição Segura</span>
+            </div>
+            <h3 class="service-item-title">Rebranding estratégico</h3>
+            <p class="service-item-desc">
+              Para negócios que cresceram, mudaram ou se profissionalizaram e precisam atualizar a percepção sem apagar a própria história.
+            </p>
+            <div class="service-scope-tags">
+              <span>Diagnóstico</span>
+              <span>Evolução de Marca</span>
+              <span>Novo Sistema</span>
+              <span>Touchpoints</span>
+            </div>
+            <a href="https://wa.me/5562993193775?text=Ol%C3%A1%2C%20Pedro.%20Gostaria%20de%20conversar%20sobre%20Rebranding%20Estrat%C3%A9gico." target="_blank" rel="noopener noreferrer" class="service-card-action" data-cursor="( Iniciar )" data-cursor-state="green">
+              <span>Solicitar este escopo</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </div>
+
+          <div class="service-card-clean">
+            <div class="service-card-head">
+              <span class="service-idx">03</span>
+              <span class="service-badge-pill">Novos Negócios</span>
+            </div>
+            <h3 class="service-item-title">Naming + identidade visual</h3>
+            <p class="service-item-desc">
+              Para empresas, produtos e novas fases que precisam nascer com clareza, diferenciação e espaço para crescer.
+            </p>
+            <div class="service-scope-tags">
+              <span>Naming Proprietário</span>
+              <span>Registro INPI</span>
+              <span>Território Verbal</span>
+              <span>Identidade Visual</span>
+            </div>
+            <a href="https://wa.me/5562993193775?text=Ol%C3%A1%2C%20Pedro.%20Gostaria%20de%20conversar%20sobre%20Naming%20e%20Identidade%20Visual." target="_blank" rel="noopener noreferrer" class="service-card-action" data-cursor="( Iniciar )" data-cursor-state="green">
+              <span>Solicitar este escopo</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </div>
+
+          <div class="service-card-clean highlight-service">
+            <div class="service-card-head">
+              <span class="service-idx">04</span>
+              <span class="service-badge-pill accent">Ponto de Partida</span>
+            </div>
+            <h3 class="service-item-title">Diagnóstico de marca</h3>
+            <p class="service-item-desc">
+              Para entender onde a percepção está falhando e qual movimento faz sentido antes de iniciar um projeto maior.
+            </p>
+            <div class="service-scope-tags">
+              <span>Auditoria de Percepção</span>
+              <span>Análise de Concorrentes</span>
+              <span>Gargalos de Valor</span>
+              <span>Direcionamento Real</span>
+            </div>
+            <a href="https://wa.me/5562993193775?text=Ol%C3%A1%2C%20Pedro.%20Gostaria%20de%20solicitar%20um%20Diagn%C3%B3stico%20de%20Marca." target="_blank" rel="noopener noreferrer" class="service-card-action accent" data-cursor="( Diagnóstico )" data-cursor-state="green">
+              <span>Solicitar diagnóstico inicial</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Banner de Ação de Serviços Enriquecido -->
+        <div class="services-action-banner">
+          <div class="action-text">
+            <div class="action-tagline">
+              <span class="act-dot">✦</span>
+              <span>DIRECIONAMENTO DIRETO</span>
+            </div>
+            <h3>Quer entender qual escopo faz mais sentido para o seu momento?</h3>
+            <p>Avaliamos o estágio da sua empresa antes de sugerir qualquer entrega visual. Sem empurrar escopos desnecessários.</p>
+            <div class="action-checklist">
+              <span><strong>✓</strong> Leitura estratégica sem compromisso</span>
+              <span><strong>✓</strong> Análise de gargalos de percepção</span>
+              <span><strong>✓</strong> Condução direta com Pedro Henrique</span>
+            </div>
+          </div>
+          <div class="action-buttons-group">
+            <a href="#contato" class="btn-primary magnetic" data-strength="15" data-cursor-state="green">
+              <span>Entender qual projeto faz sentido →</span>
+            </a>
+            <a href="https://forms.gle/Muu7Fsu9gBtKNwC2A" target="_blank" rel="noopener noreferrer" class="btn-secondary magnetic" data-strength="15" data-cursor-state="blue">
+              <span>Preencher formulário de briefing →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. PROCESSO -->
+    <section class="process-section" id="processo">
+      <div class="section-container">
+        <div class="section-header-block">
+          <div class="section-tag">
+            <span class="tag-num">05</span>
+            <span class="tag-title">Estratégia primeiro. Design depois.</span>
+          </div>
+          <h2 class="section-main-heading">
+            O visual é a parte que aparece. <em>O critério vem antes.</em>
+          </h2>
+        </div>
+
+        <div class="process-steps-track">
+          
+          <!-- Linha Conectiva Metodológica com Pulso de Luz -->
+          <div class="process-timeline-wire" aria-hidden="true">
+            <div class="process-wire-glow" id="process-wire-glow"></div>
+          </div>
+
+          <div class="process-step-item">
+            <div class="p-step-top">
+              <div class="p-step-num">01</div>
+              <span class="p-step-phase">Etapa 01/05</span>
+            </div>
+            <div class="p-step-content">
+              <h3 class="p-step-title">Entender o negócio</h3>
+              <p class="p-step-desc">
+                Conhecemos o momento da empresa, os objetivos, o público e as decisões que a marca precisa sustentar.
+              </p>
+              <div class="p-step-tags">
+                <span>Imersão</span>
+                <span>Diagnóstico</span>
+                <span>Objetivos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="process-step-item">
+            <div class="p-step-top">
+              <div class="p-step-num">02</div>
+              <span class="p-step-phase">Etapa 02/05</span>
+            </div>
+            <div class="p-step-content">
+              <h3 class="p-step-title">Ler o mercado</h3>
+              <p class="p-step-desc">
+                Mapeamos concorrentes, padrões repetidos e oportunidades reais de diferenciação.
+              </p>
+              <div class="p-step-tags">
+                <span>Benchmarking</span>
+                <span>Padrões do setor</span>
+                <span>Território aberto</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="process-step-item">
+            <div class="p-step-top">
+              <div class="p-step-num">03</div>
+              <span class="p-step-phase">Etapa 03/05</span>
+            </div>
+            <div class="p-step-content">
+              <h3 class="p-step-title">Definir a direção</h3>
+              <p class="p-step-desc">
+                Organizamos posicionamento, mensagem, personalidade e os critérios que orientarão o projeto.
+              </p>
+              <div class="p-step-tags">
+                <span>Posicionamento</span>
+                <span>Voz &amp; Tom</span>
+                <span>Critérios visuais</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="process-step-item">
+            <div class="p-step-top">
+              <div class="p-step-num">04</div>
+              <span class="p-step-phase">Etapa 04/05</span>
+            </div>
+            <div class="p-step-content">
+              <h3 class="p-step-title">Construir o sistema</h3>
+              <p class="p-step-desc">
+                Transformamos a estratégia em nome, linguagem, identidade visual e aplicações coerentes.
+              </p>
+              <div class="p-step-tags">
+                <span>Identidade</span>
+                <span>Tipografia &amp; Grid</span>
+                <span>Aplicações</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="process-step-item">
+            <div class="p-step-top">
+              <div class="p-step-num">05</div>
+              <span class="p-step-phase">Etapa 05/05</span>
+            </div>
+            <div class="p-step-content">
+              <h3 class="p-step-title">Preparar para crescer</h3>
+              <p class="p-step-desc">
+                Entregamos diretrizes para a marca funcionar em diferentes pontos de contato sem depender de improviso.
+              </p>
+              <div class="p-step-tags">
+                <span>Brandbook</span>
+                <span>Touchpoints</span>
+                <span>Governança</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Prova Visual do Processo: Moodboards & Direção Estratégica -->
+        <div class="process-proof-section">
+          <div class="consistency-intro">
+            <div class="consistency-tag">
+              <span class="c-dot">✦</span>
+              <span>PROVA VISUAL DO PROCESSO • MOODBOARDS &amp; CRITÉRIO</span>
+            </div>
+            <h3 class="consistency-title">Estratégia materializada: <em>a investigação antes do visual</em>.</h3>
+            <p class="consistency-desc">Cada projeto parte de um rigoroso mapeamento de mercado, território e códigos visuais antes de qualquer decisão estética definitiva.</p>
+          </div>
+
+          <div class="moodboards-grid">
+            <div class="moodboard-card" data-cursor="( Investigação )" data-cursor-state="blue">
+              <div class="moodboard-media">
+                <img src="assets/publico-alvo.jpg" alt="Buy Home — Mercado, concorrência e público" loading="lazy">
+                <span class="moodboard-tag">Buy Home</span>
+              </div>
+              <div class="moodboard-caption">
+                <h4>Mercado, concorrência &amp; público</h4>
+                <p>Mapeamento de comportamento e análise de players do setor imobiliário premium.</p>
+              </div>
+            </div>
+
+            <div class="moodboard-card" data-cursor="( Direção )" data-cursor-state="blue">
+              <div class="moodboard-media">
+                <img src="assets/proposta-valor.jpg" alt="Aureum — Concorrência, posicionamento e direção" loading="lazy">
+                <span class="moodboard-tag">Aureum</span>
+              </div>
+              <div class="moodboard-caption">
+                <h4>Concorrência, posicionamento &amp; direção</h4>
+                <p>Organização de oferta complexa com elegância e clareza estrutural corporativa.</p>
+              </div>
+            </div>
+
+            <div class="moodboard-card" data-cursor="( Tendências )" data-cursor-state="blue">
+              <div class="moodboard-media">
+                <img src="assets/case_225127697.jpg" alt="Rocket Business — Inovação, tendências e posicionamento" loading="lazy">
+                <span class="moodboard-tag">Rocket Business</span>
+              </div>
+              <div class="moodboard-caption">
+                <h4>Tendências, oportunidades &amp; referências</h4>
+                <p>Exploração de territórios contemporâneos e oportunidades reais de diferenciação.</p>
+              </div>
+            </div>
+
+            <div class="moodboard-card" data-cursor="( Naming )" data-cursor-state="blue">
+              <div class="moodboard-media">
+                <img src="assets/koombo-naming.webp" alt="Koombo — Testes, refinamento, disponibilidade e significado" loading="lazy">
+                <span class="moodboard-tag">Koombo</span>
+              </div>
+              <div class="moodboard-caption">
+                <h4>Testes, refinamento &amp; significado</h4>
+                <p>Construção fonética, viabilidade de registro INPI e expansão de significado de marca.</p>
+              </div>
+            </div>
+
+            <div class="moodboard-card" data-cursor="( Arquitetura )" data-cursor-state="blue">
+              <div class="moodboard-media">
+                <img src="assets/case_225645753.jpg" alt="HOD Soluções — Arquitetura de marca, tradição e legado contemporâneo" loading="lazy">
+                <span class="moodboard-tag">HOD Soluções</span>
+              </div>
+              <div class="moodboard-caption">
+                <h4>Arquitetura, tradição &amp; estrutura</h4>
+                <p>Transição de legado sem apagar autoridade, preparando a empresa para o futuro.</p>
+              </div>
+            </div>
+
+            <div class="moodboard-card" data-cursor="( Identidade )" data-cursor-state="blue">
+              <div class="moodboard-media">
+                <img src="assets/kommando-posters.jpg" alt="Kommando — Modernização das cores, símbolo e aplicações" loading="lazy">
+                <span class="moodboard-tag">Kommando</span>
+              </div>
+              <div class="moodboard-caption">
+                <h4>Cores, símbolo &amp; aplicações</h4>
+                <p>Evolução cromática de alto impacto e códigos próprios para superar clichês do setor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prova de Consistência e Sistema Proprietário PH Brandz -->
+        <div class="phbz-consistency-showcase">
+          <div class="consistency-intro">
+            <div class="consistency-tag">
+              <span class="c-dot">✦</span>
+              <span>SISTEMA PROPRIETÁRIO PH BRANDZ</span>
+            </div>
+            <h3 class="consistency-title">Do digital ao acabamento físico: <em>rigor em cada ponto de contato</em>.</h3>
+            <p class="consistency-desc">Demonstração prática de como a linguagem se desdobra em suportes reais mantendo coesão absoluta.</p>
+          </div>
+          
+          <div class="consistency-grid">
+            <div class="consistency-card" data-cursor="( Sistema )" data-cursor-state="blue">
+              <div class="consistency-media-wrap">
+                <img src="assets/phbrandz-brand-system.webp" alt="PH Brandz — Sistema de identidade corporativa e papelaria institucional" loading="lazy">
+                <div class="media-caption-badge">
+                  <span class="caption-dot"></span>
+                  <span>Identidade Corporativa • Papelaria &amp; Acabamento</span>
+                </div>
+              </div>
+              <div class="consistency-info">
+                <h4>Sistema da Própria PH</h4>
+                <p>Materiais institucionais, papelaria de alto padrão, embalagens e acabamentos de prestígio.</p>
+              </div>
+            </div>
+
+            <div class="consistency-card" data-cursor="( Digital )" data-cursor-state="blue">
+              <div class="consistency-media-wrap">
+                <img src="assets/phbrandz-digital-devices.jpg" alt="PH Brandz — Ecossistema de telas e interfaces digitais" loading="lazy">
+                <div class="media-caption-badge">
+                  <span class="caption-dot"></span>
+                  <span>Ecossistema Digital • Interfaces &amp; Telas</span>
+                </div>
+              </div>
+              <div class="consistency-info">
+                <h4>Presença Digital</h4>
+                <p>Desdobramento em telas, narrativas interativas e linguagem visual para o ambiente conectado.</p>
+              </div>
+            </div>
+
+            <div class="consistency-card" data-cursor="( Editorial )" data-cursor-state="blue">
+              <div class="consistency-media-wrap">
+                <img src="assets/phbrandz-editorial-object.jpg" alt="PH Brandz — Livro de marca e acabamento editorial de luxo" loading="lazy">
+                <div class="media-caption-badge">
+                  <span class="caption-dot"></span>
+                  <span>Objeto Físico • Brandbook &amp; Tipografia</span>
+                </div>
+              </div>
+              <div class="consistency-info">
+                <h4>Detalhe Editorial</h4>
+                <p>Livro de marca, objeto físico e direção editorial para ancorar a autoridade da empresa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 06. FILME INSTITUCIONAL -->
+    <section class="film-section" id="filme">
+      <div class="section-container">
+        <div class="section-tag">
+          <span class="tag-num">06</span>
+          <span class="tag-title">PH Brandz</span>
+        </div>
+
+        <div class="film-header-row">
+          <h2 class="film-heading">
+            Antes do design, existe uma <em>decisão</em>.
+          </h2>
+          <p class="film-lead-text">
+            Toda marca ocupa um lugar na mente do cliente. A diferença é se esse lugar foi construído com critério ou deixado ao acaso.
+          </p>
+        </div>
+
+        <!-- Player Customizado com Cantos Arredondados e Carregamento Sob Demanda -->
+        <div class="film-player-box video-trigger-box" data-video-id="sjd-VQP_b54" data-video-title="Filme Institucional PH Brandz" data-cursor="( Assistir Filme )" data-cursor-state="blue">
+          <img src="assets/film_cover.jpg" alt="Filme Institucional PH Brandz" class="film-cover-img">
+          <div class="film-overlay"></div>
+          <div class="film-center-btn">
+            <button class="btn-play-film magnetic" data-strength="20" aria-label="Assistir ao filme institucional">
+              <span class="play-ico">▶</span>
+              <span class="play-label">Assistir ao filme</span>
+            </button>
+          </div>
+          <div class="film-bottom-badge">
+            <span>FILME INSTITUCIONAL • DIREÇÃO &amp; CRITÉRIO</span>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- LINHA EDITORIAL INFINITA (AMBIENT MARQUEE) -->
+    <div class="ambient-marquee-strip" aria-hidden="true">
+      <div class="ambient-marquee-track">
+        <span class="marquee-phrase">BRAND STRATEGY <span class="m-dot">✦</span> POSITIONING <span class="m-dot">✦</span> VISUAL SYSTEMS <span class="m-dot">✦</span> NAMING <span class="m-dot">✦</span> PACKAGING <span class="m-dot">✦</span> BRAND GOVERNANCE <span class="m-dot">✦</span> </span>
+        <span class="marquee-phrase">BRAND STRATEGY <span class="m-dot">✦</span> POSITIONING <span class="m-dot">✦</span> VISUAL SYSTEMS <span class="m-dot">✦</span> NAMING <span class="m-dot">✦</span> PACKAGING <span class="m-dot">✦</span> BRAND GOVERNANCE <span class="m-dot">✦</span> </span>
+      </div>
+    </div>
+
+    <!-- 07. QUEM SOMOS (SOBRE O ESTÚDIO & PEDRO HENRIQUE) -->
+    <section class="about-section" id="sobre">
+      <div class="section-container">
+        <div class="about-grid">
+          
+          <div class="about-text-col">
+            <div class="section-tag">
+              <span class="tag-num">07</span>
+              <span class="tag-title">Por trás da estratégia</span>
+            </div>
+
+            <h2 class="about-heading">
+              Um estúdio estratégico para empresas que não querem continuar parecendo <em>comuns</em>.
+            </h2>
+
+            <div class="about-paragraphs">
+              <p>
+                A <strong>PH Brandz</strong> trabalha com branding, posicionamento, naming e identidade visual. Unimos leitura de negócio, direção criativa e execução para construir marcas que sejam entendidas, lembradas e escolhidas.
+              </p>
+              <p>
+                <strong>Pedro Henrique</strong> é fundador, estrategista e diretor criativo da PH Brandz. Ele conduz os projetos conectando cada decisão visual ao momento, ao mercado e aos objetivos reais da empresa.
+              </p>
+              <div class="about-core-thesis">
+                <span class="thesis-dot">✦</span>
+                <p>Não criamos uma aparência nova para o mesmo problema. Organizamos a marca para mudar a percepção.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-portrait-col">
+            <div class="portrait-card-frame">
+              <img src="assets/pedro-henrique.jpg" alt="Pedro Henrique - Fundador e Diretor Criativo PH Brandz" class="portrait-photo" width="576" height="1024" loading="lazy">
+              <div class="portrait-sunbeam-sweep" id="sunbeam-sweep"></div>
+              <img src="assets/phb-monogram.png" alt="PHB.®" class="portrait-monogram-overlay">
+              <div class="portrait-info-pill">
+                <strong>Pedro Henrique</strong>
+                <span>Fundador &amp; Estrategista de Marca</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. CONTEÚDO E REPERTÓRIO -->
+    <section class="repertoire-section" id="repertorio">
+      <div class="section-container">
+        <div class="section-tag">
+          <span class="tag-num">08</span>
+          <span class="tag-title">Conteúdo e repertório</span>
+        </div>
+
+        <div class="repertoire-header">
+          <h2 class="repertoire-heading">
+            Ideias para empresários que querem construir valor, não apenas <em>comunicação</em>.
+          </h2>
+          <p class="repertoire-sub">
+            Análises de mercado, comportamento de compra, posicionamento e bastidores de projetos para tornar a estratégia de marca mais simples de entender.
+          </p>
+        </div>
+
+        <div class="repertoire-links-grid">
+          
+          <a href="https://www.instagram.com/phbrandz/" target="_blank" rel="noopener noreferrer" class="repertoire-card magnetic" data-strength="15" data-cursor="( Instagram )" data-cursor-state="blue">
+            <div class="rep-media-thumb">
+              <img src="assets/phbrandz-digital-devices.jpg" alt="Instagram PH Brandz — Bastidores, ensaios e visão de negócio" loading="lazy">
+              <div class="rep-media-overlay"></div>
+              <span class="rep-media-tag">Bastidores &amp; Ensaios</span>
+            </div>
+            <div class="rep-card-body">
+              <div class="rep-card-top">
+                <span class="rep-platform">Instagram</span>
+                <span class="rep-arrow">↗</span>
+              </div>
+              <h3 class="rep-title">Bastidores &amp; Visão Estratégica</h3>
+              <p class="rep-desc">Reflexões sobre estratégia, mercado e o impacto das marcas no cotidiano dos negócios.</p>
+              <div class="rep-pills">
+                <span>Estratégia</span>
+                <span>Mercado</span>
+                <span>Processo Criativo</span>
+              </div>
+              <div class="rep-footer-row">
+                <span class="rep-handle">@phbrandz</span>
+                <span class="rep-cta-text">Acessar perfil →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.behance.net/phbrandz" target="_blank" rel="noopener noreferrer" class="repertoire-card magnetic" data-strength="15" data-cursor="( Behance )" data-cursor-state="green">
+            <div class="rep-media-thumb">
+              <img src="assets/case_210110457.jpg" alt="Behance PH Brandz — Projetos completos e sistemas de identidade" loading="lazy">
+              <div class="rep-media-overlay"></div>
+              <span class="rep-media-tag">Portfólio Completo</span>
+            </div>
+            <div class="rep-card-body">
+              <div class="rep-card-top">
+                <span class="rep-platform">Behance</span>
+                <span class="rep-arrow">↗</span>
+              </div>
+              <h3 class="rep-title">Projetos &amp; Identidades Completas</h3>
+              <p class="rep-desc">Sistemas de marca, desdobramentos, tipografia e grids conceituais em profundidade.</p>
+              <div class="rep-pills">
+                <span>Cases Oficiais</span>
+                <span>Sistemas de Marca</span>
+                <span>Embalagens</span>
+              </div>
+              <div class="rep-footer-row">
+                <span class="rep-handle">behance.net/phbrandz</span>
+                <span class="rep-cta-text">Ver projetos →</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.youtube.com/@phbrandz" target="_blank" rel="noopener noreferrer" class="repertoire-card magnetic" data-strength="15" data-cursor="( YouTube )" data-cursor-state="blue">
+            <div class="rep-media-thumb">
+              <img src="assets/film_cover.jpg" alt="YouTube PH Brandz — Filmes oficiais e análises conceituais" loading="lazy">
+              <div class="rep-media-overlay"></div>
+              <span class="rep-media-tag">Canal Audiovisual</span>
+            </div>
+            <div class="rep-card-body">
+              <div class="rep-card-top">
+                <span class="rep-platform">YouTube</span>
+                <span class="rep-arrow">↗</span>
+              </div>
+              <h3 class="rep-title">Filmes de Marca &amp; Análises</h3>
+              <p class="rep-desc">Produções cinematográficas, mini-docs e o pensamento por trás de cada criação estratégica.</p>
+              <div class="rep-pills">
+                <span>Filmes Institucionais</span>
+                <span>Mini-Docs</span>
+                <span>Direção Criativa</span>
+              </div>
+              <div class="rep-footer-row">
+                <span class="rep-handle">@phbrandz</span>
+                <span class="rep-cta-text">Assistir canal →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 09. CTA FINAL -->
+    <section class="final-cta-section" id="contato">
+      <div class="section-container text-center">
+        <div class="section-tag center-tag">
+          <span class="tag-num">09</span>
+          <span class="tag-title">Próximo movimento</span>
+        </div>
+
+        <h2 class="final-cta-title">
+          Empresas boas não deveriam<br>
+          <em>competir por desconto nem parecer comuns.</em>
+        </h2>
+
+        <p class="final-cta-lead">
+          Você já construiu uma entrega sólida. O mercado só precisa enxergar isso antes de perguntar o preço. Vamos fazer um diagnóstico do seu momento atual e desenhar o posicionamento que coloca sua empresa no topo da categoria.
+        </p>
+
+        <!-- Ações Oficiais: WhatsApp + Formulário de Briefing -->
+        <div class="final-cta-actions">
+          <a href="https://wa.me/5562993193775?text=Ol%C3%A1%2C%20Pedro.%20Vim%20pelo%20site%20da%20PH%20Brandz.%20Quero%20parar%20de%20competir%20por%20pre%C3%A7o%20e%20fazer%20um%20diagn%C3%B3stico%20do%20meu%20posicionamento." target="_blank" rel="noopener noreferrer" class="btn-primary big-cta magnetic" data-strength="20" data-cursor-state="green">
+            <span>Falar com Pedro Henrique no WhatsApp →</span>
+          </a>
+          <a href="https://forms.gle/Muu7Fsu9gBtKNwC2A" target="_blank" rel="noopener noreferrer" class="btn-secondary big-cta magnetic" data-strength="20" data-cursor-state="blue">
+            <span>Preencher formulário de briefing →</span>
+          </a>
+        </div>
+
+        <div class="final-microcopy">
+          <p>Converse diretamente com o fundador e diretor criativo da PH Brandz. Sem intermediários, com leitura imediata do seu negócio.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER INSTITUCIONAL -->
+  <footer class="bottom-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <img src="assets/phbrandz-wordmark.png" alt="PH Brandz" class="footer-brand-logo">
+        <p class="footer-sub">Design &amp; Strategy, by Brandz.</p>
+        <p class="footer-copy">Goiânia — Brasil • Projetos selecionados no Behance</p>
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-links-row">
+          <a href="https://www.instagram.com/phbrandz/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <span class="f-sep">•</span>
+          <a href="https://www.behance.net/phbrandz" target="_blank" rel="noopener noreferrer">Behance</a>
+          <span class="f-sep">•</span>
+          <a href="https://www.youtube.com/@phbrandz" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <span class="f-sep">•</span>
+          <a href="https://forms.gle/Muu7Fsu9gBtKNwC2A" target="_blank" rel="noopener noreferrer">Briefing</a>
+        </div>
+        <p class="footer-motto">EMPRESAS BOAS NÃO DEVERIAM PARECER COMUNS.</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top magnetic" data-strength="15">
+          <span>Voltar ao topo</span>
+          <span class="top-arrow">↑</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bibliotecas Externas com Subresource Integrity (SRI) e Crossorigin Anônimo -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" integrity="sha384-tKsJDT6PlUI0pSBt9/sBKJluKgA19/a6mBrDsZaXotLB4ZYfMGM6xt6/WgGpYhTm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" integrity="sha384-pEQB1h4Zmn9xhS6jotzltHSIQq6N0Oh3BXkCNOH5LKI81R2NRbb9efarAJYw9gTY" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" integrity="sha384-TgZ1GoXcDnrw/czNfaiSZSFV1zgIRv8aQOevBA8ppS4SkNONmzYfjARpXsDfdnUE" crossorigin="anonymous"></script>
+  
+  <script src="script.js?v=cta-commercial-v4"></script>
+</body>
+</html>
