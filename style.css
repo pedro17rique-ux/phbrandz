@@ -2816,14 +2816,14 @@ section {
     gap: 3.5rem;
   }
   .repertoire-links-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .consistency-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
   .process-steps-track {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .footer-inner {
     grid-template-columns: 1fr;
@@ -2835,18 +2835,293 @@ section {
   }
 }
 
+/* ============================================================
+   OTIMIZAÇÃO MOBILE: CARROSSÉIS HORIZONTAIS TOUCH & RESPIRO
+   ============================================================ */
 @media (max-width: 768px) {
+  /* 1. Respiro de Seções Compacto (Reduz altura excessiva da página) */
+  section {
+    padding: 3.5rem 1.25rem !important;
+  }
+
+  .hero-section {
+    padding-top: 5.5rem !important;
+    padding-bottom: 2.75rem !important;
+  }
+
+  .hero-portal-wrap {
+    margin: 0.5rem 0 2rem !important;
+  }
+
   .portal-media-frame {
     aspect-ratio: 16 / 9;
   }
+
   .hero-meta-row {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
+    margin-bottom: 1.25rem !important;
   }
+
+  .hero-h1 {
+    font-size: clamp(2rem, 7.5vw, 2.75rem) !important;
+    margin-bottom: 1.15rem !important;
+  }
+
+  .hero-manifesto-text {
+    font-size: 0.9375rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .hero-headline-wrap {
+    margin-bottom: 2rem !important;
+  }
+
+  .hero-actions-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem !important;
+  }
+
+  .hero-actions-row .btn-primary,
+  .hero-actions-row .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-metrics-bar {
+    margin-top: 2.5rem !important;
+    padding: 1rem 0 !important;
+  }
+
+  .section-header-block,
+  .repertoire-header,
+  .consistency-intro {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .section-main-heading,
+  .repertoire-heading {
+    font-size: clamp(1.65rem, 6.2vw, 2.25rem) !important;
+    line-height: 1.2 !important;
+  }
+
+  .tension-grid, .about-grid {
+    gap: 2.25rem !important;
+  }
+
+  .cases-editorial-stream {
+    gap: 2.5rem !important;
+    margin-top: 2rem !important;
+  }
+
+  .case-editorial-block {
+    padding: 1.5rem 1.15rem !important;
+    border-radius: 18px !important;
+  }
+
+  .case-editorial-header {
+    gap: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     CARROSSÉIS HORIZONTAIS NATIVOS COM CSS SCROLL SNAP (SWIPE)
+     ═══════════════════════════════════════════════════════════ */
+  .services-grid-4,
+  .process-steps-track,
+  .moodboards-grid,
+  .consistency-grid,
+  .repertoire-links-grid,
+  .case-subgrid-duo,
+  .case-subgrid-trio {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior-x: contain !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    margin-top: 1.25rem !important;
+    margin-bottom: 1rem !important;
+    gap: 1rem !important;
+  }
+
+  /* Extensão Sangrada Lateral (Full-bleed com respiro) para seções principais */
+  .services-grid-4,
+  .process-steps-track,
+  .moodboards-grid,
+  .consistency-grid,
+  .repertoire-links-grid {
+    margin-left: -1.25rem !important;
+    margin-right: -1.25rem !important;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  /* Sub-grades de imagem dos cases (dentro do card editorial) */
+  .case-subgrid-duo,
+  .case-subgrid-trio {
+    margin-left: -1.15rem !important;
+    margin-right: -1.15rem !important;
+    padding-left: 1.15rem !important;
+    padding-right: 1.15rem !important;
+    padding-bottom: 0.75rem !important;
+    margin-top: 1rem !important;
+    gap: 0.75rem !important;
+  }
+
+  /* Ocultar barras de rolagem nativas */
+  .services-grid-4::-webkit-scrollbar,
+  .process-steps-track::-webkit-scrollbar,
+  .moodboards-grid::-webkit-scrollbar,
+  .consistency-grid::-webkit-scrollbar,
+  .repertoire-links-grid::-webkit-scrollbar,
+  .case-subgrid-duo::-webkit-scrollbar,
+  .case-subgrid-trio::-webkit-scrollbar,
+  .dankon-scroll-sequence::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  /* Espaçador final para respiro no término do arraste */
+  .services-grid-4::after,
+  .process-steps-track::after,
+  .moodboards-grid::after,
+  .consistency-grid::after,
+  .repertoire-links-grid::after,
+  .case-subgrid-duo::after,
+  .case-subgrid-trio::after {
+    content: '' !important;
+    display: block !important;
+    flex: 0 0 0.5rem !important;
+    min-width: 0.5rem !important;
+  }
+
+  /* Largura calculada dos cards (Peek Effect para convidar ao swipe) */
+  .services-grid-4 .service-card-clean {
+    flex: 0 0 84vw !important;
+    max-width: 84vw !important;
+    min-width: 0 !important;
+    scroll-snap-align: start !important;
+    scroll-snap-stop: normal !important;
+    padding: 1.75rem 1.35rem !important;
+    margin: 0 !important;
+  }
+
+  .process-steps-track .process-step-item {
+    flex: 0 0 82vw !important;
+    max-width: 82vw !important;
+    min-width: 0 !important;
+    scroll-snap-align: start !important;
+    scroll-snap-stop: normal !important;
+    padding: 1.75rem 1.35rem !important;
+    margin: 0 !important;
+  }
+
+  .process-proof-section,
+  .phbz-consistency-showcase {
+    margin-top: 2.25rem !important;
+    padding-top: 2rem !important;
+  }
+
+  .moodboards-grid .moodboard-card {
+    flex: 0 0 76vw !important;
+    max-width: 76vw !important;
+    min-width: 0 !important;
+    scroll-snap-align: start !important;
+    scroll-snap-stop: normal !important;
+    margin: 0 !important;
+  }
+
+  .consistency-grid .consistency-card {
+    flex: 0 0 82vw !important;
+    max-width: 82vw !important;
+    min-width: 0 !important;
+    scroll-snap-align: start !important;
+    scroll-snap-stop: normal !important;
+    margin: 0 !important;
+  }
+
+  .repertoire-links-grid .repertoire-card {
+    flex: 0 0 82vw !important;
+    max-width: 82vw !important;
+    min-width: 0 !important;
+    scroll-snap-align: start !important;
+    scroll-snap-stop: normal !important;
+    margin: 0 !important;
+  }
+
+  .case-subgrid-duo .case-sub-media,
+  .case-subgrid-trio .case-sub-media {
+    flex: 0 0 76vw !important;
+    max-width: 76vw !important;
+    min-width: 0 !important;
+    scroll-snap-align: start !important;
+    scroll-snap-stop: normal !important;
+  }
+
+  /* Sequência Dankon no Mobile */
+  .dankon-scroll-sequence {
+    margin-left: -1.15rem !important;
+    margin-right: -1.15rem !important;
+    padding-left: 1.15rem !important;
+    padding-right: 1.15rem !important;
+    scroll-snap-type: x mandatory !important;
+    scrollbar-width: none !important;
+  }
+
+  .dankon-pack-card {
+    flex: 0 0 82vw !important;
+    width: 82vw !important;
+    max-width: 82vw !important;
+    scroll-snap-align: start !important;
+  }
+
+  /* Banner de Ação de Serviços */
+  .services-action-banner {
+    margin-top: 2rem !important;
+    padding: 1.75rem 1.25rem !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Micro-dica Tátil Editorial de Swipe */
+  .mobile-swipe-cue {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 0.45rem;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    color: var(--accent-neon);
+    background: rgba(196, 255, 29, 0.08);
+    border: 1px solid rgba(196, 255, 29, 0.22);
+    border-radius: var(--radius-pill);
+    padding: 0.3rem 0.75rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.03em;
+    user-select: none;
+  }
+
+  .mobile-swipe-cue .cue-dot {
+    font-size: 0.625rem;
+    animation: pulseSwipeCue 2s ease-in-out infinite;
+  }
+
+  @keyframes pulseSwipeCue {
+    0%, 100% { opacity: 0.35; transform: scale(0.9); }
+    50% { opacity: 1; transform: scale(1.15); }
+  }
+
+  /* Safe Area no Menu Flutuante */
   .floating-dock {
     width: calc(100% - 2rem);
-    bottom: 1rem;
+    bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px)) !important;
   }
   .dock-inner {
     width: 100%;
@@ -2857,11 +3132,16 @@ section {
     padding: 0.4rem 0.5rem;
     font-size: 0.6875rem;
   }
+
   .custom-cursor, .ambient-glow {
     display: none !important;
   }
-  .moodboards-grid {
-    grid-template-columns: 1fr;
+}
+
+/* Indicador tátil oculto no Desktop */
+@media (min-width: 769px) {
+  .mobile-swipe-cue {
+    display: none !important;
   }
 }
 
