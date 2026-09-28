@@ -541,7 +541,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Controlador de Pinned Scroll Horizontal
   function updateDecisionPinnedScroll() {
-    if (!runway || !track || window.innerWidth <= 900) return;
+    if (!runway || !track) return;
+    if (window.innerWidth <= 900) {
+      track.style.transform = '';
+      return;
+    }
     const rect = runway.getBoundingClientRect();
     const runwayHeight = runway.offsetHeight;
     const windowH = window.innerHeight;

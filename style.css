@@ -112,6 +112,8 @@ html {
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -4033,6 +4035,7 @@ em {
   position: relative;
   width: 100%;
   max-width: 1080px;
+  min-height: 140px;
   margin: 18px auto 6px;
   padding: 0 24px;
   display: flex;
@@ -4054,6 +4057,7 @@ em {
 }
 
 .cad-machine-vector {
+  display: block;
   width: 100%;
   height: auto;
   max-height: 260px;
@@ -4445,39 +4449,75 @@ em {
   transition: width 0.08s linear;
 }
 
-/* Responsividade Mobile / Tablet */
+/* Responsividade Mobile / Tablet (Seção 07: Seletor de Momento) */
 @media (max-width: 900px) {
+  .decision-pinned-section {
+    overflow: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
   .decision-scroll-runway {
-    height: auto;
+    height: auto !important;
   }
   .decision-sticky-viewport {
-    position: static;
-    height: auto;
-    max-height: none;
-    padding: 36px 0;
+    position: static !important;
+    height: auto !important;
+    max-height: none !important;
+    padding: clamp(32px, 5vh, 48px) 0 !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
   }
   .decision-fixed-container {
-    height: auto;
-    max-height: none;
+    height: auto !important;
+    max-height: none !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    padding: 0 var(--container-px) !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+  .decision-header-row {
+    flex-direction: column !important;
+    gap: 10px !important;
+    margin-bottom: 8px !important;
   }
   .decision-track-mask {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 12px;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-snap-type: x mandatory !important;
+    padding: 12px var(--container-px) 24px !important;
+    margin-left: calc(-1 * var(--container-px)) !important;
+    margin-right: calc(-1 * var(--container-px)) !important;
+    width: auto !important;
+    max-width: 100vw !important;
+    scrollbar-width: none !important;
+    touch-action: pan-x pan-y !important;
+  }
+  .decision-track-mask::-webkit-scrollbar {
+    display: none !important;
   }
   .decision-cards-horizontal-track {
     transform: none !important;
-    display: flex;
-    gap: 14px;
+    display: flex !important;
+    gap: 16px !important;
+    width: max-content !important;
+    padding-right: var(--container-px) !important;
   }
   .decision-cards-horizontal-track .decision-card {
-    width: 82vw;
-    min-width: 270px;
-    scroll-snap-align: center;
+    width: 82vw !important;
+    max-width: 320px !important;
+    min-width: 270px !important;
+    min-height: auto !important;
+    max-height: none !important; /* Libera altura total dos cards no celular */
+    height: auto !important;
+    scroll-snap-align: start !important;
+    flex-shrink: 0 !important;
+    padding: 22px 20px 20px !important;
   }
-  .decision-header-row {
-    flex-direction: column;
-    gap: 12px;
+  .decision-footer-hud {
+    display: none !important;
   }
 }
 
@@ -4671,6 +4711,64 @@ em {
   .form-group select,
   .form-group textarea {
     font-size: 16px;
+  }
+
+  /* Seletor ON/OFF de Raio-X Cirúrgico no Mobile */
+  .xray-meta-bar {
+    padding: 14px 16px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .xray-title-col {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .xray-bar-title {
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-align: center;
+  }
+
+  .xray-mode-switcher {
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+
+  .btn-xray-toggle {
+    flex: 1;
+    padding: 7px 8px;
+    font-size: 11.5px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .xray-switch-track {
+    width: 58px;
+    height: 30px;
+    padding: 0 7px;
+    flex-shrink: 0;
+  }
+
+  .xray-switch-thumb {
+    width: 22px;
+    height: 22px;
+    top: 2.5px;
+    right: 3px;
+  }
+
+  .xray-switch-track.is-before .xray-switch-thumb {
+    transform: translateX(-28px);
+  }
+
+  .xray-status-text {
+    font-size: 8.5px;
   }
 
   .nav-center-menu {
